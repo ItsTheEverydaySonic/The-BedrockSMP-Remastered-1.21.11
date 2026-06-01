@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": "kitty:netherite_handle",
-    "X": "#kitty:diamarite_tool_materials",
-    "Z": "kitty:netherite_rod"
+    "#": "kitty:handle",
+    "X": "#minecraft:gold_tool_materials",
+    "Z": "minecraft:stick"
   },
   "pattern": [
     "  X",
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "kitty:diamarite_spear"
+    "id": "minecraft:golden_spear"
   }
 }

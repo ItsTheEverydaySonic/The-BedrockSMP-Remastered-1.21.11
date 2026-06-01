@@ -237,6 +237,8 @@ public class TBSModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(TBSBlocks.GILDED_NETHERITE_BLOCK);
 
         blockStateModelGenerator.registerSingleton(TBSBlocks.GOLDEN_DEBRIS, TexturedModel.CUBE_COLUMN);
+
+        //blockStateModelGenerator.registerShelf(TBSBlocks.SHELFSHELF, TBSBlocks.BLUE_PLANKS);
     }
 
     @Override

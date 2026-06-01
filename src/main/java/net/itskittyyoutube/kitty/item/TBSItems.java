@@ -2,10 +2,14 @@ package net.itskittyyoutube.kitty.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.itskittyyoutube.kitty.TBS;
+import net.itskittyyoutube.kitty.block.TBSBlocks;
 import net.itskittyyoutube.kitty.material.TBSArmorMaterials;
 import net.itskittyyoutube.kitty.material.TBSToolMaterials;
 import net.itskittyyoutube.kitty.sounds.TBSJukeboxSongs;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.ContainerComponent;
 import net.minecraft.component.type.WeaponComponent;
 import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentType;
@@ -16,7 +20,9 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
+import java.util.function.BiFunction;
 import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 public class TBSItems {
     //Music Discs
@@ -375,6 +381,10 @@ public class TBSItems {
                     .repairable(DIAMARITE_MACE).attributeModifiers(MaceItem.createAttributeModifiers())
                     .enchantable(15).component(DataComponentTypes.WEAPON, new WeaponComponent(1)).fireproof().rarity(Rarity.EPIC)));
 
+    //Shelves
+    //public static final Item SHELFSHELF = register(
+            //TBSBlocks.SHELFSHELF, (UnaryOperator<Item.Settings>)(settings -> settings.component(DataComponentTypes.CONTAINER, ContainerComponent.DEFAULT)));
+
     //Extra
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TBS.MOD_ID, name), item);
@@ -384,6 +394,25 @@ public class TBSItems {
         return Registry.register(Registries.ITEM, Identifier.of(TBS.MOD_ID, name),
                 function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(TBS.MOD_ID, name)))));
     }
+
+    //public static Item register(Block block, UnaryOperator<Item.Settings> settingsOperator) {
+        //Identifier blockId = Registries.BLOCK.getId(block);
+        //Identifier itemId = Identifier.of(TBS.MOD_ID, blockId.getPath());
+
+        //RegistryKey<Item> itemKey = RegistryKey.of(
+                //RegistryKeys.ITEM,
+                //itemId
+        //);
+
+        //Item item = new BlockItem(
+                //block,
+                //settingsOperator.apply(
+                        //new Item.Settings().registryKey(itemKey)
+                //)
+        //);
+
+        //return Registry.register(Registries.ITEM, itemId, item);
+    //}
 
     public static void registerItems() {
         TBS.LOGGER.info("Registering Items for " + TBS.MOD_ID);

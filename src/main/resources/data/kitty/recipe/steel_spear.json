@@ -2,12 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": "kitty:steel_rod",
-    "X": "#kitty:steel_tool_materials"
+    "#": "kitty:steel_handle",
+    "X": "#kitty:steel_tool_materials",
+    "Z": "kitty:steel_rod"
   },
   "pattern": [
     "  X",
-    " # ",
+    " Z ",
     "#  "
   ],
   "result": {

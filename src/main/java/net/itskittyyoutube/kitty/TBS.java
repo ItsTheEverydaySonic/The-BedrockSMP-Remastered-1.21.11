@@ -118,6 +118,7 @@ public class TBS implements ModInitializer {
         FlammableBlockRegistry.getDefaultInstance().add(TBSBlocks.CHERRY_BIRCH_STAIRS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(TBSBlocks.CHERRY_BIRCH_LEAVES, 30, 60);
         //FlammableBlockRegistry.getDefaultInstance().add(TheBedrockSMPBlocks.SHELFSHELF, 30, 20);
+        //FlammableBlockRegistry.getDefaultInstance().add(TBSBlocks.SHELFSHELF, 30, 20);
         FlammableBlockRegistry.getDefaultInstance().add(TBSBlocks.GOLDEN_BIRCH_LOG, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(TBSBlocks.GOLDEN_BIRCH_WOOD, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(TBSBlocks.STRIPPED_GOLDEN_BIRCH_LOG, 5, 5);

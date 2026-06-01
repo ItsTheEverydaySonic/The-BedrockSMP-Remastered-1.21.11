@@ -204,6 +204,7 @@ public class TBSCreativeTabs {
                         entries.add(TBSBlocks.OBSIDIAN_DOOR);
                         entries.add(TBSBlocks.OBSIDIAN_TRAPDOOR);
                         //entries.add(TheBedrockSMPBlocks.SHELFSHELF);
+                        //entries.add(TBSBlocks.SHELFSHELF);
                         entries.add(TBSBlocks.BYZANTIUM_BLOCK);
                         entries.add(TBSBlocks.RAW_BYZANTIUM_BLOCK);
                         entries.add(TBSBlocks.BYZANTIUM_ORE);
