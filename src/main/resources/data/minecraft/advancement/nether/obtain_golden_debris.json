@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:nether/root",
+  "criteria": {
+    "golden_debris": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:golden_debris"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Obtain Golden Debris"
+    },
+    "icon": {
+      "count": 1,
+      "id": "kitty:golden_debris"
+    },
+    "title": {
+      "translate": "Hidden in the Depths of the Nether"
+    }
+  },
+  "requirements": [
+    [
+      "golden_debris"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

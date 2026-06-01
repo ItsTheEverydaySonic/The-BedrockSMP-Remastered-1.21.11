@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#kitty:gilded_netherite_tool_materials",
+  "base": "minecraft:diamond_axe",
+  "result": {
+    "id": "kitty:gilded_netherite_axe"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

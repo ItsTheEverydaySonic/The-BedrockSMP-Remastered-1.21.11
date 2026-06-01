@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "kitty:energy_gem"
+  ],
+  "result": {
+    "count": 9,
+    "id": "kitty:energy"
+  }
+}

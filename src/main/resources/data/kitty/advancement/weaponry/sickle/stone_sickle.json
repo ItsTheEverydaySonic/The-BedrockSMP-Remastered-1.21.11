@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:stone_sickle",
+      "count": 1
+    },
+    "title": "Stone Sickle",
+    "description": "Acquire a Stone Sickle",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/sickle/wooden_sickle",
+  "criteria": {
+    "sickle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:stone_sickle"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sickle"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

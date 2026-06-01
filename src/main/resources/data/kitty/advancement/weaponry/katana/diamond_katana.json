@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:diamond_katana",
+      "count": 1
+    },
+    "title": "Diamond Katana",
+    "description": "Acquire a Diamond Katana",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/katana/byzantium_katana",
+  "criteria": {
+    "katana": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:diamond_katana"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "katana"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

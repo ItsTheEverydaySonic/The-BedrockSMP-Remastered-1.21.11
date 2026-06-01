@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "kitty:gray_planks"
+  },
+  "pattern": [
+    "#  ",
+    "## "
+  ],
+  "result": {
+    "count": 6,
+    "id": "kitty:gray_stairs"
+  }
+}

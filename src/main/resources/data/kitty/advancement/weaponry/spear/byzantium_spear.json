@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:byzantium_spear",
+      "count": 1
+    },
+    "title": "Byzantium Spear",
+    "description": "Acquire a Byzantium Spear",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/spear/golden_spear",
+  "criteria": {
+    "spear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:byzantium_spear"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spear"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "kitty:diamarite_ingot",
+  "base": "minecraft:netherite_chestplate",
+  "result": {
+    "id": "kitty:diamarite_chestplate"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

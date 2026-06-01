@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "jukebox_song.kitty.reversed_the_tale_of_toothless"
+  },
+  "length_in_seconds": 194.0,
+  "sound_event": "kitty:music_disc.reversed_the_tale_of_toothless"
+}

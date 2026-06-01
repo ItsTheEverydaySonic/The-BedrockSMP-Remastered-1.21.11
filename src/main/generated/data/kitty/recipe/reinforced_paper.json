@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:netherite_ingot",
+    "X": "minecraft:paper"
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kitty:reinforced_paper"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "kitty:steel_handle",
+    "X": "#kitty:steel_tool_materials"
+  },
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:steel_dagger"
+  }
+}

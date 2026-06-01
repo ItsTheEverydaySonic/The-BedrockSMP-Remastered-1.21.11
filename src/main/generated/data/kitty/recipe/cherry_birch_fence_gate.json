@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "kitty:cherry_birch_planks",
+    "X": "minecraft:stick"
+  },
+  "pattern": [
+    "X#X",
+    "X#X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:cherry_birch_fence_gate"
+  }
+}

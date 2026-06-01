@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:steel_pickaxe",
+      "count": 1
+    },
+    "title": "Steel Pickaxe",
+    "description": "Acquire a Steel Pickaxe",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/pickaxe/iron_pickaxe",
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:steel_pickaxe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

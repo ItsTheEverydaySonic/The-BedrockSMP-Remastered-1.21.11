@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "netherite_ingot",
+  "ingredients": [
+    "kitty:corruptionite_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "kitty:corruptionite_ingot"
+  }
+}

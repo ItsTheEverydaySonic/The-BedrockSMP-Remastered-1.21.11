@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "kitty:steel_ingot",
+    "X": "kitty:youtube_logo"
+  },
+  "pattern": [
+    "#X#",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:silver_play_button"
+  }
+}

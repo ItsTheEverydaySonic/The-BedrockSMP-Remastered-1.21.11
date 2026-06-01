@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_pickaxe",
+      "count": 1
+    },
+    "title": "Golden Pickaxe",
+    "description": "Acquire a Golden Pickaxe",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/pickaxe/steel_pickaxe",
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_pickaxe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

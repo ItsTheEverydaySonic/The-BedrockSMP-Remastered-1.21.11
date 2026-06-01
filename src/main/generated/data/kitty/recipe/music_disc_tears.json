@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "kitty:music_disc_terrifying_tears",
+    "minecraft:disc_fragment_5"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:music_disc_tears"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "jukebox_song.kitty.reversed_waffle"
+  },
+  "length_in_seconds": 158.0,
+  "sound_event": "kitty:music_disc.reversed_waffle"
+}

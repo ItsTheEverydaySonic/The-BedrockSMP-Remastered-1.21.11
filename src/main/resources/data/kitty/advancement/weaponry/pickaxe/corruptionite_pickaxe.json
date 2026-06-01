@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:corruptionite_pickaxe",
+        "count": 1
+      },
+      "title": "Corruptionite Pickaxe",
+      "description": "Acquire a Corruptionite Pickaxe",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/pickaxe/diamarite_pickaxe",
+    "criteria": {
+      "pickaxe": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:corruptionite_pickaxe"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "pickaxe"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

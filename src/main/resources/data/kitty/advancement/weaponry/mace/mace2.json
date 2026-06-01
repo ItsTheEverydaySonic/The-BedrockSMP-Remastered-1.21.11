@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:diamarite_mace",
+        "count": 1
+      },
+      "title": "The Weapon from The Void",
+      "description": "Acquire a Diamarite Mace",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/mace/core2",
+    "criteria": {
+      "mace": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:diamarite_mace"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "mace"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

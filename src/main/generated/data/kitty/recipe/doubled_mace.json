@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:mace",
+    "kitty:diamarite_mace"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:doubled_mace"
+  }
+}

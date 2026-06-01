@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:gold_ingot",
+    "X": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kitty:steel_ingot"
+  }
+}

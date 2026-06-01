@@ -1,0 +1,39 @@
+{
+  "parent": "kitty:weaponry/armor/byzantium_armor",
+  "criteria": {
+    "diamond_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_helmet"
+          },
+          {
+            "items": "minecraft:diamond_chestplate"
+          },
+          {
+            "items": "minecraft:diamond_leggings"
+          },
+          {
+            "items": "minecraft:diamond_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Get a full suit of Diamond Armor",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:diamond_chestplate"
+    },
+    "title": "Ooooh Shiny"
+  },
+  "requirements": [
+    [
+      "diamond_armor"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:gilded_netherite_hoe",
+      "count": 1
+    },
+    "title": "Gilded Netherite Hoe",
+    "description": "Acquire a Gilded Netherite Hoe",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/gilded_netherite_axe",
+  "criteria": {
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:gilded_netherite_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hoe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

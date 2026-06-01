@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:music_disc_pigstep",
+    "minecraft:music_disc_tears",
+    "minecraft:music_disc_lava_chicken"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:music_disc_lava_tearsstep"
+  }
+}

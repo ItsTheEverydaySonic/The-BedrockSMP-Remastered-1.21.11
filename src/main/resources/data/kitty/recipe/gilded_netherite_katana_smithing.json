@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#kitty:gilded_netherite_tool_materials",
+  "base": "kitty:diamond_katana",
+  "result": {
+    "id": "kitty:gilded_netherite_katana"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

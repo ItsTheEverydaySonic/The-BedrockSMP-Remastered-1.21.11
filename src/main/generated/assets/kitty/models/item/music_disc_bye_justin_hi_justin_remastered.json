@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kitty:item/music_disc_bye_justin_hi_justin_remastered"
+  }
+}

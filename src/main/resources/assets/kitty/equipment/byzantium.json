@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "kitty:byzantium"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "kitty:byzantium"
+      }
+    ]
+  }
+}

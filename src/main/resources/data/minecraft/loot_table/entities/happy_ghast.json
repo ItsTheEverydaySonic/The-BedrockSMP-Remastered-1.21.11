@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "halloween:music_disc_terrifying_tears",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dried_ghast",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/happy_ghast"
+}

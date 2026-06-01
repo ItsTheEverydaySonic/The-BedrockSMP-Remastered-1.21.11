@@ -1,0 +1,22 @@
+{
+  "values": [
+    "kitty:white_slab",
+    "kitty:light_gray_slab",
+    "kitty:gray_slab",
+    "kitty:black_slab",
+    "kitty:brown_slab",
+    "kitty:red_slab",
+    "kitty:orange_slab",
+    "kitty:yellow_slab",
+    "kitty:lime_slab",
+    "kitty:green_slab",
+    "kitty:cyan_slab",
+    "kitty:light_blue_slab",
+    "kitty:blue_slab",
+    "kitty:purple_slab",
+    "kitty:magenta_slab",
+    "kitty:pink_slab",
+    "kitty:cherry_birch_slab",
+    "kitty:golden_birch_slab"
+  ]
+}

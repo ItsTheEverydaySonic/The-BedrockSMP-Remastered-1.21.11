@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_green_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:green_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kitty:green_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_green_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kitty:green_stairs"
+    ]
+  }
+}

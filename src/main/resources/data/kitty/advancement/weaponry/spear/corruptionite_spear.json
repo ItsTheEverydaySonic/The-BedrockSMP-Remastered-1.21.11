@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:corruptionite_spear",
+        "count": 1
+      },
+      "title": "Corruptionite Spear",
+      "description": "Acquire a Corruptionite Spear",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/spear/diamarite_spear",
+    "criteria": {
+      "spear": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:corruptionite_spear"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "spear"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:corruptionite_axe",
+      "count": 1
+    },
+    "title": "Corruptionite Axe",
+    "description": "Acquire a Corruptionite Axe",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/axe/diamarite_axe",
+  "criteria": {
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:corruptionite_axe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "axe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

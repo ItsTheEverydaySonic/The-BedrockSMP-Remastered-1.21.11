@@ -1,0 +1,10 @@
+{
+  "type": "fabric:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "kitty:ore_byzantium",
+    "kitty:ore_byzantium_extra",
+    "kitty:ore_byzantium_lower"
+  ],
+  "step": "underground_ores"
+}

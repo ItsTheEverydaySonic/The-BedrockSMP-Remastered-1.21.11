@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "gold_ingot",
+  "ingredients": [
+    "kitty:byzantium_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "kitty:byzantium_ingot"
+  }
+}

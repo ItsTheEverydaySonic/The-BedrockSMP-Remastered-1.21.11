@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:iron_katana",
+        "count": 1
+      },
+      "title": "Iron Katana",
+      "description": "Acquire an Iron Katana",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/katana/copper_katana",
+    "criteria": {
+      "katana": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:iron_katana"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "katana"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

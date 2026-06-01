@@ -1,0 +1,3 @@
+            entries.addAfter(Items.WOODEN_SWORD, TBSItems.WOODEN_KATANA);
+            entries.addAfter(TBSItems.WOODEN_KATANA, TBSItems.WOODEN_SICKLE);
+            entries.addAfter(TBSItems.WOODEN_SICKLE, TBSItems.WOODEN_DAGGER);

@@ -1,0 +1,42 @@
+{
+  "parent": "kitty:weaponry/armor/diamarite_armor",
+  "criteria": {
+    "corruptionite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:corruptionite_helmet"
+          },
+          {
+            "items": "kitty:corruptionite_chestplate"
+          },
+          {
+            "items": "kitty:corruptionite_leggings"
+          },
+          {
+            "items": "kitty:corruptionite_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Get a full suit of Corruptionite Armor",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "kitty:corruptionite_chestplate"
+    },
+    "title": "Cover Me in Corruption"
+  },
+  "requirements": [
+    [
+      "corruptionite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

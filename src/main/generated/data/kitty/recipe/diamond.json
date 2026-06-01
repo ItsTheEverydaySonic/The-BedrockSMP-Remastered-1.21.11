@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:netherite_upgrade_smithing_template"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond"
+  }
+}

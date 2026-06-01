@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_music_disc_11": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_11"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_music_disc_13": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_13"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_music_disc_5": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kitty:music_disc_12"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_music_disc_11",
+      "has_music_disc_13",
+      "has_music_disc_5"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kitty:music_disc_12"
+    ]
+  }
+}

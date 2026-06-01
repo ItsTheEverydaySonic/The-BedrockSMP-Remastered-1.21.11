@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:diamarite_pickaxe",
+        "count": 1
+      },
+      "title": "Diamarite Pickaxe",
+      "description": "Acquire a Diamarite Pickaxe",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/pickaxe/diamond_pickaxe",
+    "criteria": {
+      "pickaxe": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:diamarite_pickaxe"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "pickaxe"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

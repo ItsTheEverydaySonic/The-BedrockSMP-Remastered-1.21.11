@@ -1,0 +1,648 @@
+{
+  "parent": "kitty:bedrocksmp/root",
+  "criteria": {
+    "disc_template": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_template"
+          }
+        ]
+      }
+    },
+    "disc_13": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_13"
+          }
+        ]
+      }
+    },
+    "disc_cat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_cat"
+          }
+        ]
+      }
+    },
+    "disc_blocks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_blocks"
+          }
+        ]
+      }
+    },
+    "disc_chirp": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_chirp"
+          }
+        ]
+      }
+    },
+    "disc_far": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_far"
+          }
+        ]
+      }
+    },
+    "disc_mall": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_mall"
+          }
+        ]
+      }
+    },
+    "disc_mellohi": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_mellohi"
+          }
+        ]
+      }
+    },
+    "disc_stal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_stal"
+          }
+        ]
+      }
+    },
+    "disc_strad": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_strad"
+          }
+        ]
+      }
+    },
+    "disc_ward": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_ward"
+          }
+        ]
+      }
+    },
+    "disc_11": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_11"
+          }
+        ]
+      }
+    },
+    "disc_creator_music_box": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_creator_music_box"
+          }
+        ]
+      }
+    },
+    "disc_wait": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_wait"
+          }
+        ]
+      }
+    },
+    "disc_creator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_creator"
+          }
+        ]
+      }
+    },
+    "disc_precipice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_precipice"
+          }
+        ]
+      }
+    },
+    "disc_otherside": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_otherside"
+          }
+        ]
+      }
+    },
+    "disc_relic": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_relic"
+          }
+        ]
+      }
+    },
+    "disc_5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_5"
+          }
+        ]
+      }
+    },
+    "disc_pigstep": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_pigstep"
+          }
+        ]
+      }
+    },
+    "disc_tears": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_tears"
+          }
+        ]
+      }
+    },
+    "disc_lava_chicken": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_lava_chicken"
+          }
+        ]
+      }
+    },
+    "disc_toothless_rap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_the_tale_of_toothless"
+          }
+        ]
+      }
+    },
+    "disc_justin_rap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_bye_justin_hi_justin"
+          }
+        ]
+      }
+    },
+    "disc_steve_lava_chicken": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_steve_lava_chicken"
+          }
+        ]
+      }
+    },
+    "disc_lava_tearsstep": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_lava_tearsstep"
+          }
+        ]
+      }
+    },
+    "disc_terrifying_tears": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_terrifying_tears"
+          }
+        ]
+      }
+    },
+    "disc_betterside": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_betterside"
+          }
+        ]
+      }
+    },
+    "disc_12": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_12"
+          }
+        ]
+      }
+    },
+    "disc_justin_rap_remastered": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_bye_justin_hi_justin_remastered"
+          }
+        ]
+      }
+    },
+    "disc_explorer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_explorer"
+          }
+        ]
+      }
+    },
+    "disc_already_ahead": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_already_ahead"
+          }
+        ]
+      }
+    },
+    "disc_dark_inside": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_dark_inside"
+          }
+        ]
+      }
+    },
+    "disc_reversed_toothless_rap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_reversed_the_tale_of_toothless"
+          }
+        ]
+      }
+    },
+    "disc_reversed_justin_rap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_reversed_bye_justin_hi_justin"
+          }
+        ]
+      }
+    },
+    "disc_reversed_steve_lava_chicken": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_reversed_steve_lava_chicken"
+          }
+        ]
+      }
+    },
+    "disc_reversed_lava_tearsstep": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_reversed_lava_tearsstep"
+          }
+        ]
+      }
+    },
+    "disc_reversed_terrifying_tears": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_reversed_terrifying_tears"
+          }
+        ]
+      }
+    },
+    "disc_reversed_betterside": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_reversed_betterside"
+          }
+        ]
+      }
+    },
+    "disc_reversed_12": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_reversed_12"
+          }
+        ]
+      }
+    },
+    "disc_reversed_justin_rap_remastered": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_reversed_bye_justin_hi_justin_remastered"
+          }
+        ]
+      }
+    },
+    "disc_reversed_explorer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_reversed_explorer"
+          }
+        ]
+      }
+    },
+    "disc_reversed_already_ahead": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_reversed_already_ahead"
+          }
+        ]
+      }
+    },
+    "disc_reversed_dark_inside": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_reversed_dark_inside"
+          }
+        ]
+      }
+    },
+    "pancake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:pancake"
+          }
+        ]
+      }
+    },
+    "waffle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:waffle"
+          }
+        ]
+      }
+    },
+    "reversed_pancake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:reversed_pancake"
+          }
+        ]
+      }
+    },
+    "reversed_waffle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:reversed_waffle"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Collect every Music Disc"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:music_disc_13"
+    },
+    "title": {
+      "text": "Music Master"
+    }
+  },
+  "requirements": [
+    [
+      "reversed_waffle"
+    ],
+    [
+      "reversed_pancake"
+    ],
+    [
+      "waffle"
+    ],
+    [
+      "pancake"
+    ],
+    [
+      "disc_reversed_dark_inside"
+    ],
+    [
+      "disc_reversed_already_ahead"
+    ],
+    [
+      "disc_reversed_explorer"
+    ],
+    [
+      "disc_reversed_justin_rap_remastered"
+    ],
+    [
+      "disc_reversed_12"
+    ],
+    [
+      "disc_reversed_betterside"
+    ],
+    [
+      "disc_reversed_terrifying_tears"
+    ],
+    [
+      "disc_reversed_lava_tearsstep"
+    ],
+    [
+      "disc_reversed_steve_lava_chicken"
+    ],
+    [
+      "disc_reversed_justin_rap"
+    ],
+    [
+      "disc_reversed_toothless_rap"
+    ],
+    [
+      "disc_dark_inside"
+    ],
+    [
+      "disc_already_ahead"
+    ],
+    [
+      "disc_explorer"
+    ],
+    [
+      "disc_justin_rap_remastered"
+    ],
+    [
+      "disc_12"
+    ],
+    [
+      "disc_betterside"
+    ],
+    [
+      "disc_terrifying_tears"
+    ],
+    [
+      "disc_lava_tearsstep"
+    ],
+    [
+      "disc_steve_lava_chicken"
+    ],
+    [
+      "disc_justin_rap"
+    ],
+    [
+      "disc_toothless_rap"
+    ],
+    [
+      "disc_lava_chicken"
+    ],
+    [
+      "disc_tears"
+    ],
+    [
+      "disc_pigstep"
+    ],
+    [
+      "disc_5"
+    ],
+    [
+      "disc_relic"
+    ],
+    [
+      "disc_otherside"
+    ],
+    [
+      "disc_precipice"
+    ],
+    [
+      "disc_creator"
+    ],
+    [
+      "disc_wait"
+    ],
+    [
+      "disc_creator_music_box"
+    ],
+    [
+      "disc_11"
+    ],
+    [
+      "disc_ward"
+    ],
+    [
+      "disc_strad"
+    ],
+    [
+      "disc_stal"
+    ],
+    [
+      "disc_mellohi"
+    ],
+    [
+      "disc_mall"
+    ],
+    [
+      "disc_far"
+    ],
+    [
+      "disc_chirp"
+    ],
+    [
+      "disc_blocks"
+    ],
+    [
+      "disc_cat"
+    ],
+    [
+      "disc_13"
+    ],
+    [
+      "disc_template"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  },
+  "sends_telemetry_event": true
+}

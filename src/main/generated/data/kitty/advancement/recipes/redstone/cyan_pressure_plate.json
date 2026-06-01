@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cyan_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:cyan_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kitty:cyan_pressure_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cyan_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kitty:cyan_pressure_plate"
+    ]
+  }
+}

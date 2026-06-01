@@ -1,0 +1,39 @@
+{
+  "parent": "kitty:weaponry/root",
+  "criteria": {
+    "leather_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_helmet"
+          },
+          {
+            "items": "minecraft:leather_chestplate"
+          },
+          {
+            "items": "minecraft:leather_leggings"
+          },
+          {
+            "items": "minecraft:leather_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Get a full suit of Leather Armor",
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:leather_chestplate"
+    },
+    "title": "Great start!"
+  },
+  "requirements": [
+    [
+      "leather_armor"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

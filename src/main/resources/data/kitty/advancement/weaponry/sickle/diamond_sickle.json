@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:diamond_sickle",
+      "count": 1
+    },
+    "title": "Diamond Sickle",
+    "description": "Acquire a Diamond Sickle",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/sickle/byzantium_sickle",
+  "criteria": {
+    "sickle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:diamond_sickle"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sickle"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

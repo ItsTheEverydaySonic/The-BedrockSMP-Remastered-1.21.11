@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:copper_spear",
+        "count": 1
+      },
+      "title": "Copper Spear",
+      "description": "Acquire an Copper Spear",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/spear/stone_spear",
+    "criteria": {
+      "spear": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:copper_spear"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "spear"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

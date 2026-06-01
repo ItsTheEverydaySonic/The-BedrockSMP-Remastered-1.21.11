@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "kitty:block/dark_oak_door_with_windows_bottom",
+    "top": "kitty:block/dark_oak_door_with_windows_top"
+  }
+}

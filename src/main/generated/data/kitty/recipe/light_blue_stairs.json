@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "kitty:light_blue_planks"
+  },
+  "pattern": [
+    "#  ",
+    "## "
+  ],
+  "result": {
+    "count": 6,
+    "id": "kitty:light_blue_stairs"
+  }
+}

@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:heavy_core",
+        "count": 1
+      },
+      "title": "The Core of Space",
+      "description": "Acquire a Heavy Core",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/mace/breeze_rod",
+    "criteria": {
+      "core": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:heavy_core"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "core"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

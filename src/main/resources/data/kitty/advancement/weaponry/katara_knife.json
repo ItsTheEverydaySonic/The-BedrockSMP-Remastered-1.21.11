@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:katara_knife",
+      "count": 1
+    },
+    "title": "Katara Knife",
+    "description": "Acquire a Katara Knife",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/root",
+  "criteria": {
+    "knife": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:katara_knife"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "knife"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

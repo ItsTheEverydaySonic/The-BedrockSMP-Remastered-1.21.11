@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:gold_tool_materials",
+  "base": "#minecraft:diamond_tool_materials",
+  "result": {
+    "id": "kitty:gilded_netherite_ingot"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wooden_axe",
+      "count": 1
+    },
+    "title": "Wooden Axe",
+    "description": "Acquire a Wooden Axe",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/root",
+  "criteria": {
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_axe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "axe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

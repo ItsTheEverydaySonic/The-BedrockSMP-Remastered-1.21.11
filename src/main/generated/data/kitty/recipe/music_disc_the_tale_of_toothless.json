@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "#minecraft:diamond_tool_materials",
+    "X": "minecraft:emerald"
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:music_disc_the_tale_of_toothless"
+  }
+}

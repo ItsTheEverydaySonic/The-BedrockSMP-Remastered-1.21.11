@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "kitty:diamarite_ingot",
+  "base": "minecraft:netherite_leggings",
+  "result": {
+    "id": "kitty:diamarite_leggings"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

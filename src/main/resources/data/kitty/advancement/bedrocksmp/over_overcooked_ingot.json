@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:chard_ingot",
+      "count": 1
+    },
+    "title": "Over Overcooked Ingot??",
+    "description": "Okay. . . SERIOUSLY?!",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:bedrocksmp/overcooked_ingot",
+  "criteria": {
+    "chard_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:chard_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chard_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

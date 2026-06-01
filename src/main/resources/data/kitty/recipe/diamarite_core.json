@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:heavy_core",
+    "X": "kitty:diamarite"
+  },
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:diamarite_core"
+  }
+}

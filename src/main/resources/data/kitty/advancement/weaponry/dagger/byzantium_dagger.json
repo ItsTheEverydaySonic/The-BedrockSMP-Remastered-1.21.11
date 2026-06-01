@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:byzantium_dagger",
+      "count": 1
+    },
+    "title": "Byzantium Dagger",
+    "description": "Acquire a Byzantium Dagger",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/dagger/golden_dagger",
+  "criteria": {
+    "dagger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:byzantium_dagger"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dagger"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

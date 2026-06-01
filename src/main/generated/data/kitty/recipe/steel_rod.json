@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "#kitty:steel_tool_materials",
+    "X": "minecraft:stick"
+  },
+  "pattern": [
+    "  #",
+    " X ",
+    "#  "
+  ],
+  "result": {
+    "count": 4,
+    "id": "kitty:steel_rod"
+  }
+}

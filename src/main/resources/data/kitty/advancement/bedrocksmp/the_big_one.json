@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:big_stick",
+      "count": 1
+    },
+    "title": "The Big One",
+    "description": "Acquire the Big Stick",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:bedrocksmp/root",
+  "criteria": {
+    "stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:big_stick"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "stick"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

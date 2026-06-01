@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:steel_shovel",
+      "count": 1
+    },
+    "title": "Steel Shovel",
+    "description": "Acquire a Steel Shovel",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/shovel/iron_shovel",
+  "criteria": {
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:steel_shovel"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shovel"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

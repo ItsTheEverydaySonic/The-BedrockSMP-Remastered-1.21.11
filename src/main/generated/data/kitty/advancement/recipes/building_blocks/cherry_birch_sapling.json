@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_birch_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:birch_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cherry_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:cherry_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kitty:cherry_birch_sapling"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_birch_sapling",
+      "has_cherry_sapling"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kitty:cherry_birch_sapling"
+    ]
+  }
+}

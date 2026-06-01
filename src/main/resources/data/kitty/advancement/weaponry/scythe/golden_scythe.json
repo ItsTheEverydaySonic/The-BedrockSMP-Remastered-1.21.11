@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:golden_scythe",
+      "count": 1
+    },
+    "title": "Golden Scythe",
+    "description": "Acquire a Golden Scythe",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/scythe/steel_scythe",
+  "criteria": {
+    "scythe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:golden_scythe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "scythe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

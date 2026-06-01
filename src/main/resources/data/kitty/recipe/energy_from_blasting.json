@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    "kitty:energy_pickaxe",
+    "kitty:energy_shovel",
+    "kitty:energy_axe",
+    "kitty:energy_hoe",
+    "kitty:energy_sword",
+    "kitty:energy_helmet",
+    "kitty:energy_chestplate",
+    "kitty:energy_leggings",
+    "kitty:energy_boots",
+    "kitty:energy_horse_armor"
+  ],
+  "result": {
+    "id": "kitty:energy"
+  }
+}

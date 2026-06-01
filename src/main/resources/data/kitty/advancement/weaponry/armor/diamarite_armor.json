@@ -1,0 +1,42 @@
+{
+  "parent": "kitty:weaponry/armor/diamond_armor",
+  "criteria": {
+    "diamarite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:diamarite_helmet"
+          },
+          {
+            "items": "kitty:diamarite_chestplate"
+          },
+          {
+            "items": "kitty:diamarite_leggings"
+          },
+          {
+            "items": "kitty:diamarite_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Get a full suit of Diamarite Armor",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "kitty:diamarite_chestplate"
+    },
+    "title": "Cover Me in Magic"
+  },
+  "requirements": [
+    [
+      "diamarite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,39 @@
+{
+  "parent": "kitty:weaponry/armor/golden_armor",
+  "criteria": {
+    "byzantium_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:byzantium_helmet"
+          },
+          {
+            "items": "kitty:byzantium_chestplate"
+          },
+          {
+            "items": "kitty:byzantium_leggings"
+          },
+          {
+            "items": "kitty:byzantium_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Get a full suit of Byzantium Armor",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "kitty:byzantium_chestplate"
+    },
+    "title": "Niccce Dude, Sweet Set!"
+  },
+  "requirements": [
+    [
+      "byzantium_armor"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

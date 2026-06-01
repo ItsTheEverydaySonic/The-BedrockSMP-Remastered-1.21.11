@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "kitty:diamarite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "kitty:diamarite"
+      }
+    ]
+  }
+}

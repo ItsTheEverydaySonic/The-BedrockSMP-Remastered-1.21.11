@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:gilded_netherite_shovel",
+      "count": 1
+    },
+    "title": "Gilded Netherite Shovel",
+    "description": "Acquire a Gilded Netherite Shovel",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/gilded_netherite_armor",
+  "criteria": {
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:gilded_netherite_shovel"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shovel"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

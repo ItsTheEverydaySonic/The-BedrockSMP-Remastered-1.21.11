@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "kitty:gilded_netherite_ingot",
+  "base": "minecraft:diamond_boots",
+  "result": {
+    "id": "kitty:gilded_netherite_boots"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

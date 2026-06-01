@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:burnt_ingot",
+      "count": 1
+    },
+    "title": "Overcooked Ingot??",
+    "description": "HOW DO YOU OVERCOOK AN INGOT?!",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:bedrocksmp/root",
+  "criteria": {
+    "burnt_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:burnt_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "burnt_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

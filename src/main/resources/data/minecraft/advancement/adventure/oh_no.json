@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "minecraft:happy_ghast": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:happy_ghast"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "K§4§ki§rll§r a H§4§kap§rpy Gh§4§kas§rt"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:dried_ghast"
+    },
+    "title": {
+      "translate": "§4§kThe Unholy"
+    },
+    "frame": "challenge"
+  },
+  "requirements": [
+    [
+      "minecraft:happy_ghast"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

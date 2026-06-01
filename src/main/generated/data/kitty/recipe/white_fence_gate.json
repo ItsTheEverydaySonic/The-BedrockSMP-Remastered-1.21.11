@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "kitty:white_planks",
+    "X": "minecraft:stick"
+  },
+  "pattern": [
+    "X#X",
+    "X#X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:white_fence_gate"
+  }
+}

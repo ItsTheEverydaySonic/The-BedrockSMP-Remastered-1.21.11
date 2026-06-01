@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_music_disc_lava_chicken": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_lava_chicken"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_music_disc_pigstep": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_pigstep"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_music_disc_tears": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:music_disc_tears"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kitty:music_disc_lava_tearsstep"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_music_disc_pigstep",
+      "has_music_disc_tears",
+      "has_music_disc_lava_chicken"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kitty:music_disc_lava_tearsstep"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    "kitty:byzantium_pickaxe",
+    "kitty:byzantium_shovel",
+    "kitty:byzantium_axe",
+    "kitty:byzantium_hoe",
+    "kitty:byzantium_sword",
+    "kitty:byzantium_helmet",
+    "kitty:byzantium_chestplate",
+    "kitty:byzantium_leggings",
+    "kitty:byzantium_boots"
+  ],
+  "result": {
+    "id": "kitty:byzantium_nugget"
+  }
+}

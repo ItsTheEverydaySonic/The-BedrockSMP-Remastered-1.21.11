@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#kitty:corruptionite_tool_materials",
+  "base": "minecraft:netherite_pickaxe",
+  "result": {
+    "id": "kitty:corruptionite_pickaxe"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

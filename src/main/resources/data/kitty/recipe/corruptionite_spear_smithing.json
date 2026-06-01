@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#kitty:corruptionite_tool_materials",
+  "base": "minecraft:netherite_spear",
+  "result": {
+    "id": "kitty:corruptionite_spear"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

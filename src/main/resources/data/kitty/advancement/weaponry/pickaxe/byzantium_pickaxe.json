@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:byzantium_pickaxe",
+      "count": 1
+    },
+    "title": "Byzantium Pickaxe",
+    "description": "Acquire a Byzantium Pickaxe",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/pickaxe/golden_pickaxe",
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:byzantium_pickaxe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

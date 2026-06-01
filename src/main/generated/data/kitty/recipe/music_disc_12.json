@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:music_disc_11",
+    "minecraft:music_disc_13",
+    "minecraft:music_disc_5"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:music_disc_12"
+  }
+}

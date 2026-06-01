@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:wooden_sickle",
+      "count": 1
+    },
+    "title": "Wooden Sickle",
+    "description": "Acquire a Wooden Sickle",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/root",
+  "criteria": {
+    "sickle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:wooden_sickle"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sickle"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

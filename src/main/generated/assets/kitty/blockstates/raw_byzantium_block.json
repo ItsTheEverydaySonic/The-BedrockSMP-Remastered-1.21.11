@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kitty:block/raw_byzantium_block"
+    }
+  }
+}

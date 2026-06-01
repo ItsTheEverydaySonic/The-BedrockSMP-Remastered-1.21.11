@@ -1,0 +1,18 @@
+{
+  "block.supplementaries.rope": "Spider Silk",
+  "block.supplementaries.rope_knot": "Webbed Post",
+
+  "entity.supplementaries.rope_arrow": "Spider Silk Arrow",
+
+  "item.supplementaries.rope_arrow": "Spider Silk Arrow",
+
+  "message.supplementaries.bunting": "Can be placed on Spider Silk",
+  "message.supplementaries.rope_arrow": "Spider Silk: %s",
+  "message.supplementaries.rope_arrow_tooltip": "Spider Silk: %1$s / %2$s",
+
+  "subtitles.supplementaries.rope.break": "Spider Silk broken",
+  "subtitles.supplementaries.rope.place": "Spider Silk placed",
+  "subtitles.supplementaries.rope.slide": "Spider Silk slide",
+
+  "tag.item.supplementaries.ropes": "Spider Silk"
+}

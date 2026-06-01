@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_duct_tape": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:duct_tape"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kitty:big_stick"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stick",
+      "has_duct_tape"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kitty:big_stick"
+    ]
+  }
+}

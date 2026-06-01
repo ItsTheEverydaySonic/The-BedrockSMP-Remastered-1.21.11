@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:steel_sword",
+      "count": 1
+    },
+    "title": "Steel Sword",
+    "description": "Acquire a Steel Sword",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/sword/iron_sword",
+  "criteria": {
+    "sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:steel_sword"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sword"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

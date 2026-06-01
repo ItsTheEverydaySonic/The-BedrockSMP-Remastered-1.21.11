@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:byzantium_hoe",
+      "count": 1
+    },
+    "title": "Byzantium Hoe",
+    "description": "Acquire a Byzantium Hoe",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/hoe/golden_hoe",
+  "criteria": {
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:byzantium_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hoe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

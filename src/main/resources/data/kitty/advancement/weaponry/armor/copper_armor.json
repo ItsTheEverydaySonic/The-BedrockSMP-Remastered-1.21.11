@@ -1,0 +1,39 @@
+{
+  "parent": "kitty:weaponry/armor/leather_armor",
+  "criteria": {
+    "copper_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:copper_helmet"
+          },
+          {
+            "items": "minecraft:copper_chestplate"
+          },
+          {
+            "items": "minecraft:copper_leggings"
+          },
+          {
+            "items": "minecraft:copper_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Get a full suit of Copper Armor",
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:copper_chestplate"
+    },
+    "title": "I mean, its okay"
+  },
+  "requirements": [
+    [
+      "copper_armor"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

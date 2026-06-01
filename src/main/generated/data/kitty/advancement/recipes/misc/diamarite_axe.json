@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diamarite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#kitty:diamarite_tool_materials"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_netherite_rod": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:netherite_rod"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kitty:diamarite_axe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_diamarite",
+      "has_netherite_rod"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kitty:diamarite_axe"
+    ]
+  }
+}

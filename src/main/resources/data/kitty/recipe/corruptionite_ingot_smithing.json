@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "kitty:diamarite_ingot",
+  "base": "#minecraft:netherite_tool_materials",
+  "result": {
+    "id": "kitty:corruptionite_ingot"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

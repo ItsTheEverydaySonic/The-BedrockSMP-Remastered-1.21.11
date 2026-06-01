@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:gilded_netherite_spear",
+        "count": 1
+      },
+      "title": "Netherite Spear",
+      "description": "Acquire a Netherite Spear",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "minecraft:nether/gilded_netherite_dagger",
+    "criteria": {
+      "spear": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:gilded_netherite_spear"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "spear"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

@@ -1,0 +1,12 @@
+{
+  "asset_id": "kitty:entity/cat/shmicken",
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": "minecraft:taiga"
+      },
+      "priority": 1
+    }
+  ]
+}

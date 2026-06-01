@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_hoe",
+      "count": 1
+    },
+    "title": "Netherite Hoe",
+    "description": "Acquire a Netherite Hoe",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/netherite_axe",
+  "criteria": {
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hoe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

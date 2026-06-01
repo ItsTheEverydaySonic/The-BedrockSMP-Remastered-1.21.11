@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:crossbow",
+      "count": 1
+    },
+    "title": "Archery",
+    "description": "Take Aim and Shoot something with an Arrow",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/bow/bow",
+  "criteria": {
+    "shot_arrow": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_projectile",
+                "expected": true
+              }
+            ],
+            "direct_entity": {
+              "type": "#minecraft:arrows"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shot_arrow"
+    ]
+  ]
+}

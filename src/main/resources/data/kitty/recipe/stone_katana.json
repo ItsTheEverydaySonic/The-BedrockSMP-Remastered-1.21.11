@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "kitty:handle",
+    "X": "#minecraft:stone_tool_materials"
+  },
+  "pattern": [
+    "  X",
+    " X ",
+    "#  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:stone_katana"
+  }
+}

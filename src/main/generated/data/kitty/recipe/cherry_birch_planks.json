@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "#kitty:cherry_birch_logs"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kitty:cherry_birch_planks"
+  }
+}

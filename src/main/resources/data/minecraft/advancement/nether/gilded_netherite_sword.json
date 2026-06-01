@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:gilded_netherite_sword",
+        "count": 1
+      },
+      "title": "Gilded Netherite Sword",
+      "description": "Acquire a Gilded Netherite Sword",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "minecraft:nether/gilded_netherite_hoe",
+    "criteria": {
+      "sword": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:gilded_netherite_sword"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "sword"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

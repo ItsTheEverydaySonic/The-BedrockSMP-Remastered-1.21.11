@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "kitty:diamarite"
+  },
+  "pattern": [
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:diamarite_boots"
+  }
+}

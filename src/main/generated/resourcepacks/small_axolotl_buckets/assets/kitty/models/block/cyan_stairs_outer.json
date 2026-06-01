@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "kitty:block/cyan_planks",
+    "side": "kitty:block/cyan_planks",
+    "top": "kitty:block/cyan_planks"
+  }
+}

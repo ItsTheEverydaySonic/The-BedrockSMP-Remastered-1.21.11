@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "ingredient": "kitty:pancake",
+  "result": {
+    "id": "kitty:waffle"
+  },
+  "experience": 0.35,
+  "cookingtime": 600
+}

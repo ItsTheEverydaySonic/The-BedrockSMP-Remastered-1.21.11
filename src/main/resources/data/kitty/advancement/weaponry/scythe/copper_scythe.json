@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:copper_scythe",
+        "count": 1
+      },
+      "title": "Copper Scythe",
+      "description": "Acquire an Copper Scythe",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/scythe/stone_scythe",
+    "criteria": {
+      "scythe": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:copper_scythe"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "scythe"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

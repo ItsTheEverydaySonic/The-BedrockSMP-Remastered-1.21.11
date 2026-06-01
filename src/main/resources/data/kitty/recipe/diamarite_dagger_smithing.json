@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#kitty:diamarite_tool_materials",
+  "base": "kitty:netherite_dagger",
+  "result": {
+    "id": "kitty:diamarite_dagger"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:corruptionite_sword",
+        "count": 1
+      },
+      "title": "Corruptionite Sword",
+      "description": "Acquire a Corruptionite Sword",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/sword/diamarite_sword",
+    "criteria": {
+      "sword": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:corruptionite_sword"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "sword"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

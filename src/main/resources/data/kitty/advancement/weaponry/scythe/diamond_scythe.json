@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:diamond_scythe",
+      "count": 1
+    },
+    "title": "Diamond Scythe",
+    "description": "Acquire a Diamond Scythe",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/scythe/byzantium_scythe",
+  "criteria": {
+    "scythe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:diamond_scythe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "scythe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

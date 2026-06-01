@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wooden_shovel",
+      "count": 1
+    },
+    "title": "Wooden Shovel",
+    "description": "Acquire a Wooden Shovel",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/root",
+  "criteria": {
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wooden_shovel"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shovel"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#kitty:diamarite_tool_materials",
+  "base": "minecraft:netherite_axe",
+  "result": {
+    "id": "kitty:diamarite_axe"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

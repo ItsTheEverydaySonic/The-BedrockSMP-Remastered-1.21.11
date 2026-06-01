@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:copper_hoe",
+      "count": 1
+    },
+    "title": "Copper Hoe",
+    "description": "Acquire a Copper Hoe",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/hoe/stone_hoe",
+  "criteria": {
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:copper_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hoe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

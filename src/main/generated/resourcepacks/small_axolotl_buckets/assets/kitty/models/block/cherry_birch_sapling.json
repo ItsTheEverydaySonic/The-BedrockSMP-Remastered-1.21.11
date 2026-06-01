@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "kitty:block/cherry_birch_sapling"
+  }
+}

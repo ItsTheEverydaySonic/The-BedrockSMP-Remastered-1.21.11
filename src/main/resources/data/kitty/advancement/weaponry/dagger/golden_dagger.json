@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:golden_dagger",
+      "count": 1
+    },
+    "title": "Golden Dagger",
+    "description": "Acquire a Golden Dagger",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/dagger/steel_dagger",
+  "criteria": {
+    "dagger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:golden_dagger"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dagger"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

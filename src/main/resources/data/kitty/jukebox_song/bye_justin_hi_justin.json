@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "jukebox_song.kitty.bye_justin_hi_justin"
+  },
+  "length_in_seconds": 120.0,
+  "sound_event": "kitty:music_disc.bye_justin_hi_justin"
+}

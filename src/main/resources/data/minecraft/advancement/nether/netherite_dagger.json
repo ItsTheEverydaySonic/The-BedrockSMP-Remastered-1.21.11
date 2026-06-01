@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:netherite_dagger",
+        "count": 1
+      },
+      "title": "Netherite Dagger",
+      "description": "Acquire a Netherite Dagger",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "minecraft:nether/netherite_scythe",
+    "criteria": {
+      "dagger": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:netherite_dagger"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "dagger"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

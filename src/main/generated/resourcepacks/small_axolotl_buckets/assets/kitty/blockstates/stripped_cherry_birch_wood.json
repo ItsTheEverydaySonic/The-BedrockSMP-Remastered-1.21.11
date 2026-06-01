@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "kitty:block/stripped_cherry_birch_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "kitty:block/stripped_cherry_birch_wood"
+    },
+    "axis=z": {
+      "model": "kitty:block/stripped_cherry_birch_wood",
+      "x": 90
+    }
+  }
+}

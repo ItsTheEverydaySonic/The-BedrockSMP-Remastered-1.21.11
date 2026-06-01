@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_spear",
+      "count": 1
+    },
+    "title": "Golden Spear",
+    "description": "Acquire a Golden Spear",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/spear/steel_spear",
+  "criteria": {
+    "spear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_spear"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spear"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

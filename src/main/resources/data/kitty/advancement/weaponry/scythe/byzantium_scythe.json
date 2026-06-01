@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:byzantium_scythe",
+      "count": 1
+    },
+    "title": "Byzantium Scythe",
+    "description": "Acquire a Byzantium Scythe",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/scythe/golden_scythe",
+  "criteria": {
+    "scythe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:byzantium_scythe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "scythe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

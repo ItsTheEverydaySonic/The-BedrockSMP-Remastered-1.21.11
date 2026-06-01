@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "netherite_ingot",
+  "ingredients": [
+    "kitty:gilded_netherite_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "kitty:gilded_netherite_ingot"
+  }
+}

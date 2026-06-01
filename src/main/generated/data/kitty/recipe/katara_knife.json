@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "#kitty:steel_tool_materials",
+    "X": "kitty:steel_rod"
+  },
+  "pattern": [
+    "#",
+    "X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:katara_knife"
+  }
+}

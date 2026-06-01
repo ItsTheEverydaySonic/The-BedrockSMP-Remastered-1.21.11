@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:diamarite_spear",
+        "count": 1
+      },
+      "title": "Diamarite Spear",
+      "description": "Acquire a Diamarite Spear",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/spear/diamond_spear",
+    "criteria": {
+      "spear": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:diamarite_spear"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "spear"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

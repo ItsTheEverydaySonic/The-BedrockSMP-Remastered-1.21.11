@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    "kitty:brown_planks"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:brown_button"
+  }
+}

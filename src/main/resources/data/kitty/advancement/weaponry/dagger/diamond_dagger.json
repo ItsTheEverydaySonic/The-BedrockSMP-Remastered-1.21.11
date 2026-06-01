@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:diamond_dagger",
+      "count": 1
+    },
+    "title": "Diamond Dagger",
+    "description": "Acquire a Diamond Dagger",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/dagger/byzantium_dagger",
+  "criteria": {
+    "dagger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:diamond_dagger"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dagger"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

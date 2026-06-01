@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:arrow",
+      "count": 1
+    },
+    "title": "Extra Sniper Duel",
+    "description": "Kill a Skeleton from at least 60 meters away",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/bow/archery",
+  "criteria": {
+    "killed_skeleton": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:skeleton",
+              "distance": {
+                "horizontal": {
+                  "min": 60
+                }
+              }
+            }
+          }
+        ],
+        "killing_blow": {
+          "tags": [
+            {
+              "id": "minecraft:is_projectile",
+              "expected": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "killed_skeleton"
+    ]
+  ],
+  "rewards": {
+    "experience": 60
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,16 @@
+// 1.21.11	-999999999-01-01T00:00:00	The-BedrockSMP Remastered/Tags for minecraft:block
+01a3e66dc1885e9041954641dc2510dbb8d8cce4 data/minecraft/tags/block/doors.json
+1a433a04e918e647ec3ab6e56cbbac826576e06b data/minecraft/tags/block/fence_gates.json
+96cf9cfc08405329475d2af6d8d2ea0ac8c918e9 data/minecraft/tags/block/logs_that_burn.json
+a3fbe209a9aff9177152dbdadeac1485f7a5eb7e data/minecraft/tags/block/mineable/pickaxe.json
+9cd811632594440ef738f84c96e37d89327430a5 data/minecraft/tags/block/needs_diamond_tool.json
+9c7e0fe18c6e3c361b6f8a9a2ce6ddad241b4252 data/minecraft/tags/block/needs_iron_tool.json
+f0ccea7e780dc5a1956a70b82f2e74e684fbac77 data/minecraft/tags/block/needs_stone_tool.json
+77dcab475172b7ca45db23920d51b51328829c03 data/minecraft/tags/block/trapdoors.json
+952b6d1c3b45fcc90a966a066250a33d3d916eb5 data/minecraft/tags/block/wooden_buttons.json
+640899ef58387a79328afa42df81fba5d240e199 data/minecraft/tags/block/wooden_doors.json
+72edbb2586af68eca45245d2b94e2970a0df716b data/minecraft/tags/block/wooden_fences.json
+599fc50ffba19037e0b0ec8158f088919018713f data/minecraft/tags/block/wooden_pressure_plates.json
+487d2ecb9997517d9bfcf88d5856956af2986915 data/minecraft/tags/block/wooden_slabs.json
+4dd909a51f06cfa28a100f6e7955f8c1ef4c58a2 data/minecraft/tags/block/wooden_stairs.json
+2f7fe61ee74d8f46c0539a4758143b2a92e9fb69 data/minecraft/tags/block/wooden_trapdoors.json

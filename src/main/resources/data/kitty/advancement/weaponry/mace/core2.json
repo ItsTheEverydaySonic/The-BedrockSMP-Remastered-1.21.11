@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:diamarite_core",
+        "count": 1
+      },
+      "title": "The Core of The Void",
+      "description": "Acquire a Diamarite Core",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/mace/core",
+    "criteria": {
+      "core": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:diamarite_core"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "core"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

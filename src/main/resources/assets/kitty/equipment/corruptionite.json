@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "kitty:corruptionite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "kitty:corruptionite"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:birch_sapling",
+    "minecraft:cherry_sapling"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kitty:cherry_birch_sapling"
+  }
+}

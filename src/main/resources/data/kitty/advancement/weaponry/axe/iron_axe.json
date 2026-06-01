@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_axe",
+      "count": 1
+    },
+    "title": "Iron Axe",
+    "description": "Acquire a Iron Axe",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/axe/copper_axe",
+  "criteria": {
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_axe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "axe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

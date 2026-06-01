@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#kitty:diamarite_tool_materials",
+  "base": "minecraft:netherite_spear",
+  "result": {
+    "id": "kitty:diamarite_spear"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

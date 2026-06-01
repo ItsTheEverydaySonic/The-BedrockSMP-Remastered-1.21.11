@@ -1,0 +1,11 @@
+        itemModelGenerator.register(TBSItems.WOODEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.COPPER_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.STONE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.GOLDEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.BYZANTIUM_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.IRON_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.STEEL_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.DIAMOND_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.NETHERITE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.DIAMARITE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.CORRUPTIONITE_DAGGER, Models.HANDHELD);

@@ -1,0 +1,15 @@
+{
+  "values": [
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:netherite_ingot",
+    "kitty:steel_ingot",
+    "kitty:diamarite_ingot",
+    "kitty:corruptionite_ingot",
+    "kitty:diamond_ingot",
+    "kitty:amethyst_ingot",
+    "kitty:byzantium_ingot",
+    "kitty:gilded_netherite_ingot"
+  ]
+}

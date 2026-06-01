@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:diamarite_scythe",
+        "count": 1
+      },
+      "title": "Diamarite Scythe",
+      "description": "Acquire a Diamarite Scythe",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/scythe/diamond_scythe",
+    "criteria": {
+      "scythe": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:diamarite_scythe"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "scythe"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "kitty:golden_birch_bees_0002",
+    "features": [
+      {
+        "chance": 0.0125,
+        "feature": "kitty:fallen_golden_birch_tree"
+      }
+    ]
+  }
+}

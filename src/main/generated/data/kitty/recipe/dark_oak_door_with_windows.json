@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "minecraft:dark_oak_planks",
+    "X": "minecraft:glass_pane"
+  },
+  "pattern": [
+    "XX",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "kitty:dark_oak_door_with_windows"
+  }
+}

@@ -1,0 +1,11 @@
+                .add(TBSItems.WOODEN_DAGGER)
+                .add(TBSItems.COPPER_DAGGER)
+                .add(TBSItems.STONE_DAGGER)
+                .add(TBSItems.GOLDEN_DAGGER)
+                .add(TBSItems.BYZANTIUM_DAGGER)
+                .add(TBSItems.IRON_DAGGER)
+                .add(TBSItems.STEEL_DAGGER)
+                .add(TBSItems.DIAMOND_DAGGER)
+                .add(TBSItems.NETHERITE_DAGGER)
+                .add(TBSItems.DIAMARITE_DAGGER)
+                .add(TBSItems.CORRUPTIONITE_DAGGER);

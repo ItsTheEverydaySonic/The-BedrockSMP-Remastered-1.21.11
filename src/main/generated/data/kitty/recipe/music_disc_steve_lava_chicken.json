@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#kitty:heads"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:music_disc_steve_lava_chicken"
+  }
+}

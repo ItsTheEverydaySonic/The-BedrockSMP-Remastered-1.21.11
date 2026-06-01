@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#kitty:gilded_netherite_tool_materials",
+  "base": "kitty:diamond_scythe",
+  "result": {
+    "id": "kitty:gilded_netherite_scythe"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

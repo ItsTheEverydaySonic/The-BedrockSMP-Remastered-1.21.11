@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "netherite_ingot",
+  "ingredients": [
+    "kitty:golden_scrap",
+    "kitty:golden_scrap",
+    "kitty:golden_scrap",
+    "kitty:golden_scrap",
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:gilded_netherite_ingot"
+  }
+}

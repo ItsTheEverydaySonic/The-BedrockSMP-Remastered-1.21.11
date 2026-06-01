@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:corruptionite_shovel",
+      "count": 1
+    },
+    "title": "Corruptionite Shovel",
+    "description": "Acquire a Corruptionite Shovel",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/shovel/diamarite_shovel",
+  "criteria": {
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:corruptionite_shovel"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shovel"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

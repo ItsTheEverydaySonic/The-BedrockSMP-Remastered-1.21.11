@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_apple",
+      "count": 1
+    },
+    "title": "Gapple",
+    "description": "Acquire a Golden Apple",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:bedrocksmp/root",
+  "criteria": {
+    "golden": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_apple"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "golden"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

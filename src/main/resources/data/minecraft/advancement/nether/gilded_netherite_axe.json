@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:gilded_netherite_axe",
+      "count": 1
+    },
+    "title": "Gilded Netherite Axe",
+    "description": "Acquire a Gilded Netherite Axe",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/gilded_netherite_pickaxe",
+  "criteria": {
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:gilded_netherite_axe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "axe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

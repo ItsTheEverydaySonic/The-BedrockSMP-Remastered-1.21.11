@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:paper"
+    ],
+    [
+      "minecraft:slime_ball"
+    ]
+  ],
+  "result": {
+    "id": "kitty:duct_tape",
+    "count": 2
+  }
+}

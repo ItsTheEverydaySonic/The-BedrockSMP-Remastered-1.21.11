@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:adventure/oh_no",
+  "criteria": {
+    "terrifying_tears": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:music_disc_terrifying_tears"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "§5Acquire the Ter§4§krif§ryin§4§kg§r§5 Te§4§kar§rs§5 music disc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "kitty:music_disc_terrifying_tears"
+    },
+    "title": {
+      "translate": "§5Ter§4§krif§r§5yin§4§kg§r§5 Te§4§kar§r§5s"
+    },
+    "frame": "challenge"
+  },
+  "requirements": [
+    [
+      "terrifying_tears"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

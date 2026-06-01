@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "#kitty:steel_tool_materials",
+    "X": "kitty:steel_rod"
+  },
+  "pattern": [
+    "###",
+    " X ",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:steel_pickaxe"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "kitty",
+  "version": "${version}",
+  "name": "The-BedrockSMP Remastered",
+  "description": "The-BedrockSMP is a feature-packed Fabric mod for Minecraft 1.21.x. It adds custom blocks, items, music discs, and gameplay enhancements, with built-in resource packs and optional Biomes O’ Plenty and Voice Chat support.",
+  "authors": [
+    "ItsKittyYouTube"
+  ],
+  "contributors": [
+    "ItsMoonYouTube",
+    "ItsTheEverydayPapaYT",
+    "Sora66"
+  ],
+  "contact": {
+    "homepage": "https://bedrocksmp.gamer.gd",
+    "sources": "https://github.com/ItsTheEverydaySonic/The-BedrockSMP-Remastered"
+  },
+  "license": "KittyStudios Protective License",
+  "icon": "pack_image/The-BedrockSMP Remastered Logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.itskittyyoutube.kitty.TBS"
+    ],
+    "fabric-datagen": [
+      "net.itskittyyoutube.kitty.TBSDataGenerator"
+    ],
+    "client": [
+      "net.itskittyyoutube.kitty.TBSClient"
+    ]
+  },
+  "mixins": [
+    "kitty.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+  "recommends": {
+    "modmenu": "*",
+    "voicechat": "*",
+    "sound_physics_remastered": "*",
+    "entity_model_features": "*",
+    "entity_texture_features": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.youtubekitty": "https://www.youtube.com/@ItsKittyYouTube?sub_confirmation=1",
+        "modmenu.youtubemoon": "https://www.youtube.com/@ItsMoonDogggYT?sub_confirmation=1",
+        "modmenu.youtubekittyandmoon": "https://www.youtube.com/@kittyandmoon?sub_confirmation=1",
+        "modmenu.miniverse": "https://discord.gg/geng92VaWv",
+        "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/bedrocksmp"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:corruptionite_sickle",
+        "count": 1
+      },
+      "title": "Corruptionite Sickle",
+      "description": "Acquire a Corruptionite Sickle",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/sickle/diamarite_sickle",
+    "criteria": {
+      "sickle": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:corruptionite_sickle"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "sickle"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "kitty:block/cherry_birch_planks"
+  }
+}

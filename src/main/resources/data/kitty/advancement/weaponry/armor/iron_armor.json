@@ -1,0 +1,39 @@
+{
+  "parent": "kitty:weaponry/armor/chainmail_armor",
+  "criteria": {
+    "iron_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_helmet"
+          },
+          {
+            "items": "minecraft:iron_chestplate"
+          },
+          {
+            "items": "minecraft:iron_leggings"
+          },
+          {
+            "items": "minecraft:iron_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Get a full suit of Iron Armor",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:iron_chestplate"
+    },
+    "title": "Suiting up!"
+  },
+  "requirements": [
+    [
+      "iron_armor"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

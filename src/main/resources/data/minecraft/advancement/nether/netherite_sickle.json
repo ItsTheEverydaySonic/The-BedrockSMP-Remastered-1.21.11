@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:netherite_sickle",
+        "count": 1
+      },
+      "title": "Netherite Sickle",
+      "description": "Acquire a Netherite Sickle",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "minecraft:nether/netherite_katana",
+    "criteria": {
+      "sickle": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:netherite_sickle"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "sickle"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

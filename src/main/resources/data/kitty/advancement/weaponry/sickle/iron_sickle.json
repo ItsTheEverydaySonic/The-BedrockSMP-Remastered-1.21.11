@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:iron_sickle",
+        "count": 1
+      },
+      "title": "Iron Sickle",
+      "description": "Acquire an Iron Sickle",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/sickle/copper_sickle",
+    "criteria": {
+      "sickle": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:iron_sickle"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "sickle"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

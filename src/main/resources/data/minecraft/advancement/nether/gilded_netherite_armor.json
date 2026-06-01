@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:nether/obtain_golden_debris",
+  "criteria": {
+    "gilded_netherite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:gilded_netherite_helmet"
+          },
+          {
+            "items": "kitty:gilded_netherite_chestplate"
+          },
+          {
+            "items": "kitty:gilded_netherite_leggings"
+          },
+          {
+            "items": "kitty:gilded_netherite_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Get a full suit of Gilded Netherite Armor",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "kitty:gilded_netherite_chestplate"
+    },
+    "title": "Cover Me in Gilded Debris"
+  },
+  "requirements": [
+    [
+      "gilded_netherite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

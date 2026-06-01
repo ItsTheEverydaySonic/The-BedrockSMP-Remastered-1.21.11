@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "kitty:block/golden_debris_top",
+    "side": "kitty:block/golden_debris_side"
+  }
+}

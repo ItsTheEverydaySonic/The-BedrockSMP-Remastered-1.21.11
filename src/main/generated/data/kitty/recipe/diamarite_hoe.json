@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "#kitty:diamarite_tool_materials",
+    "X": "kitty:netherite_rod"
+  },
+  "pattern": [
+    "##",
+    " X",
+    " X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:diamarite_hoe"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:blue_dye",
+    "B": "minecraft:purple_dye",
+    "V": "minecraft:lime_dye",
+    "X": "minecraft:green_dye",
+    "Z": "minecraft:magenta_dye"
+  },
+  "pattern": [
+    "X##",
+    "ZVB",
+    "ZZ#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:music_disc_explorer"
+  }
+}

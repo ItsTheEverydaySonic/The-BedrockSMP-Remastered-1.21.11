@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:corruptionite_katana",
+        "count": 1
+      },
+      "title": "Corruptionite Katana",
+      "description": "Acquire a Corruptionite Katana",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/katana/diamarite_katana",
+    "criteria": {
+      "katana": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:corruptionite_katana"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "katana"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "kitty:red_planks",
+    "X": "minecraft:stick"
+  },
+  "pattern": [
+    "#X#",
+    "#X#"
+  ],
+  "result": {
+    "count": 3,
+    "id": "kitty:red_fence"
+  }
+}

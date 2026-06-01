@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "kitty:planks_template",
+    "minecraft:green_dye"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kitty:green_planks"
+  }
+}

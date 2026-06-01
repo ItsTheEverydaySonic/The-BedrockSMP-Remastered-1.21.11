@@ -1,0 +1,16 @@
+{
+  "values": [
+    "kitty:stone_door",
+    "kitty:stone_trapdoor",
+    "kitty:obsidian_door",
+    "kitty:obsidian_trapdoor",
+    "kitty:diamarite_block",
+    "kitty:corruptionite_block",
+    "kitty:byzantium_block",
+    "kitty:raw_byzantium_block",
+    "kitty:byzantium_ore",
+    "kitty:deepslate_byzantium_ore",
+    "kitty:diamarite_core",
+    "kitty:gilded_netherite_block"
+  ]
+}

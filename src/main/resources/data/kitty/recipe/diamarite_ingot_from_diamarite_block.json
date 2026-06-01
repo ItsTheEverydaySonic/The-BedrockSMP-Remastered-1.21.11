@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "netherite_ingot",
+  "ingredients": [
+    "kitty:diamarite_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "kitty:diamarite_ingot"
+  }
+}

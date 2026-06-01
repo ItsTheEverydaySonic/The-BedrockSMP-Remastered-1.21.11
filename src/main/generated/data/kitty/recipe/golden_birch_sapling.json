@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:birch_sapling",
+    "minecraft:yellow_dye"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kitty:golden_birch_sapling"
+  }
+}

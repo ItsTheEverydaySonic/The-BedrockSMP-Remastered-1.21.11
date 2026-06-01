@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "kitty:diamarite_sword",
+        "count": 1
+      },
+      "title": "Diamarite Sword",
+      "description": "Acquire a Diamarite Sword",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kitty:weaponry/sword/diamond_sword",
+    "criteria": {
+      "sword": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "kitty:diamarite_sword"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "sword"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

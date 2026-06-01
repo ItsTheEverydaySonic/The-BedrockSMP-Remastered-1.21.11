@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:music_disc_otherside"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:music_disc_betterside"
+  }
+}

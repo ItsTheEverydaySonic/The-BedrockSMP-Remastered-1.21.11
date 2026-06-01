@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:netherite_block",
+    "X": "minecraft:nether_star",
+    "Z": "#minecraft:diamond_tool_materials"
+  },
+  "pattern": [
+    "Z#Z",
+    "#X#",
+    "Z#Z"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:bedrock"
+  }
+}

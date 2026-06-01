@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#kitty:corruptionite_tool_materials",
+  "base": "kitty:netherite_scythe",
+  "result": {
+    "id": "kitty:corruptionite_scythe"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:byzantium_katana",
+      "count": 1
+    },
+    "title": "Byzantium Katana",
+    "description": "Acquire a Byzantium Katana",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/katana/golden_katana",
+  "criteria": {
+    "katana": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:byzantium_katana"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "katana"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
