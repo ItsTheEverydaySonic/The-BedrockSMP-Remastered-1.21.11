@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "kitty:energy_handle",
+    "X": "#kitty:energy_tool_materials"
+  },
+  "pattern": [
+    "  X",
+    " X ",
+    "#  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:energy_katana"
+  }
+}

@@ -11,7 +11,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kitty:weaponry/pickaxe/diamond_pickaxe",
+    "parent": "kitty:weaponry/pickaxe/energy_pickaxe",
     "criteria": {
       "pickaxe": {
         "trigger": "minecraft:inventory_changed",

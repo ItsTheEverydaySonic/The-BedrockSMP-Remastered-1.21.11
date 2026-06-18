@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": "minecraft:stick",
+    "#": "kitty:energy_rod",
     "X": "#kitty:energy_tool_materials"
   },
   "pattern": [

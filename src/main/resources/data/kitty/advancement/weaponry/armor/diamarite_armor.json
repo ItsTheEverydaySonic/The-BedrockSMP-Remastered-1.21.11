@@ -1,5 +1,5 @@
 {
-  "parent": "kitty:weaponry/armor/diamond_armor",
+  "parent": "kitty:weaponry/armor/energy_armor",
   "criteria": {
     "diamarite_armor": {
       "conditions": {

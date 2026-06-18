@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "kitty:dreadite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "kitty:dreadite"
+      }
+    ]
+  }
+}

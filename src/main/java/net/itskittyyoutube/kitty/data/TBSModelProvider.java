@@ -307,6 +307,11 @@ public class TBSModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(TBSItems.DUCT_TAPE, Models.GENERATED);
 
+        itemModelGenerator.register(TBSItems.ENERGY, Models.GENERATED);
+        itemModelGenerator.register(TBSItems.ENERGY_GEM, Models.GENERATED);
+
+        itemModelGenerator.register(TBSItems.DREADITE_GEM, Models.GENERATED);
+
         itemModelGenerator.register(TBSItems.STEEL_SWORD, Models.HANDHELD);
         itemModelGenerator.register(TBSItems.STEEL_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(TBSItems.STEEL_PICKAXE, Models.HANDHELD);
@@ -344,6 +349,9 @@ public class TBSModelProvider extends FabricModelProvider {
         itemModelGenerator.register(TBSItems.HANDLE, Models.HANDHELD);
         itemModelGenerator.register(TBSItems.NETHERITE_HANDLE, Models.HANDHELD);
         itemModelGenerator.register(TBSItems.STEEL_HANDLE, Models.HANDHELD);
+
+        itemModelGenerator.register(TBSItems.ENERGY_ROD, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.ENERGY_HANDLE, Models.HANDHELD);
 
         itemModelGenerator.register(TBSItems.WOODEN_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(TBSItems.COPPER_SICKLE, Models.HANDHELD);
@@ -400,6 +408,17 @@ public class TBSModelProvider extends FabricModelProvider {
         itemModelGenerator.registerSpear(TBSItems.DIAMARITE_SPEAR);
         itemModelGenerator.registerSpear(TBSItems.CORRUPTIONITE_SPEAR);
 
+        itemModelGenerator.register(TBSItems.ENERGY_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.ENERGY_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.ENERGY_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.ENERGY_AXE, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.ENERGY_HOE, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.ENERGY_DAGGER, Models.HANDHELD);
+        itemModelGenerator.registerSpear(TBSItems.ENERGY_SPEAR);
+        itemModelGenerator.register(TBSItems.ENERGY_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.ENERGY_KATANA, Models.HANDHELD);
+        itemModelGenerator.register(TBSItems.ENERGY_SCYTHE, Models.HANDHELD);
+
         itemModelGenerator.registerArmor(TBSItems.DIAMARITE_HELMET, TBSArmorMaterials.DIAMARITE_KEY, ItemModelGenerator.HELMET_TRIM_ID_PREFIX, false);
         itemModelGenerator.registerArmor(TBSItems.DIAMARITE_CHESTPLATE, TBSArmorMaterials.DIAMARITE_KEY, ItemModelGenerator.CHESTPLATE_TRIM_ID_PREFIX, false);
         itemModelGenerator.registerArmor(TBSItems.DIAMARITE_LEGGINGS, TBSArmorMaterials.DIAMARITE_KEY, ItemModelGenerator.LEGGINGS_TRIM_ID_PREFIX, false);
@@ -417,6 +436,16 @@ public class TBSModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(TBSItems.GILDED_NETHERITE_CHESTPLATE, TBSArmorMaterials.GILDED_NETHERITE_KEY, ItemModelGenerator.CHESTPLATE_TRIM_ID_PREFIX, false);
         itemModelGenerator.registerArmor(TBSItems.GILDED_NETHERITE_LEGGINGS, TBSArmorMaterials.GILDED_NETHERITE_KEY, ItemModelGenerator.LEGGINGS_TRIM_ID_PREFIX, false);
         itemModelGenerator.registerArmor(TBSItems.GILDED_NETHERITE_BOOTS, TBSArmorMaterials.GILDED_NETHERITE_KEY, ItemModelGenerator.BOOTS_TRIM_ID_PREFIX, false);
+
+        itemModelGenerator.registerArmor(TBSItems.ENERGY_HELMET, TBSArmorMaterials.ENERGY_KEY, ItemModelGenerator.HELMET_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(TBSItems.ENERGY_CHESTPLATE, TBSArmorMaterials.ENERGY_KEY, ItemModelGenerator.CHESTPLATE_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(TBSItems.ENERGY_LEGGINGS, TBSArmorMaterials.ENERGY_KEY, ItemModelGenerator.LEGGINGS_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(TBSItems.ENERGY_BOOTS, TBSArmorMaterials.ENERGY_KEY, ItemModelGenerator.BOOTS_TRIM_ID_PREFIX, false);
+
+        itemModelGenerator.registerArmor(TBSItems.DREADITE_HELMET, TBSArmorMaterials.DREADITE_KEY, ItemModelGenerator.HELMET_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(TBSItems.DREADITE_CHESTPLATE, TBSArmorMaterials.DREADITE_KEY, ItemModelGenerator.CHESTPLATE_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(TBSItems.DREADITE_LEGGINGS, TBSArmorMaterials.DREADITE_KEY, ItemModelGenerator.LEGGINGS_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(TBSItems.DREADITE_BOOTS, TBSArmorMaterials.DREADITE_KEY, ItemModelGenerator.BOOTS_TRIM_ID_PREFIX, false);
 
         Item item = Items.AXOLOTL_BUCKET;
         Identifier modelId = ModelIds.getItemModelId(item);

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "kitty:dreadite_gem",
+  "base": "minecraft:netherite_chestplate",
+  "result": {
+    "id": "kitty:dreadite_chestplate"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

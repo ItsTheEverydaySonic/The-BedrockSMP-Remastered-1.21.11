@@ -11,7 +11,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kitty:weaponry/spear/diamond_spear",
+    "parent": "kitty:weaponry/spear/energy_spear",
     "criteria": {
       "spear": {
         "trigger": "minecraft:inventory_changed",

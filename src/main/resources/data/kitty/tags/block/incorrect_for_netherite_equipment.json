@@ -1,6 +1,6 @@
 {
   "values": [
-    "#minecraft:incorrect_for_netherite_tool"
+    "#minecraft:incorrect_for_diamond_tool"
   ],
   "remove": [
     "#kitty:needs_netherite_equipment"

@@ -11,7 +11,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kitty:weaponry/sickle/diamond_sickle",
+    "parent": "kitty:weaponry/sickle/energy_sickle",
     "criteria": {
       "sickle": {
         "trigger": "minecraft:inventory_changed",

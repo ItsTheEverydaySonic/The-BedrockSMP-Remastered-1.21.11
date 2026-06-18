@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "#kitty:energy_tool_materials",
+    "X": "kitty:handle"
+  },
+  "pattern": [
+    "  #",
+    " X ",
+    "#  "
+  ],
+  "result": {
+    "count": 4,
+    "id": "kitty:energy_handle"
+  }
+}

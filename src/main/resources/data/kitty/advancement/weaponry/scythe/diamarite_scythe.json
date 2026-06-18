@@ -11,7 +11,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kitty:weaponry/scythe/diamond_scythe",
+    "parent": "kitty:weaponry/scythe/energy_scythe",
     "criteria": {
       "scythe": {
         "trigger": "minecraft:inventory_changed",

@@ -233,6 +233,8 @@ public class TBSLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(TBSBlocks.DIAMARITE_CORE);
 
         addDrop(TBSBlocks.GILDED_NETHERITE_BLOCK);
+
+        addDrop(TBSBlocks.ENERGY_BLOCK);
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

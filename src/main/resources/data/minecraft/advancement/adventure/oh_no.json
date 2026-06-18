@@ -17,16 +17,12 @@
     }
   },
   "display": {
-    "description": {
-      "translate": "K§4§ki§rll§r a H§4§kap§rpy Gh§4§kas§rt"
-    },
+    "description": "K§4§ki§rll§r a H§4§kap§rpy Gh§4§kas§rt",
     "icon": {
       "count": 1,
       "id": "minecraft:dried_ghast"
     },
-    "title": {
-      "translate": "§4§kThe Unholy"
-    },
+    "title": "§4§kThe Unholy",
     "frame": "challenge"
   },
   "requirements": [

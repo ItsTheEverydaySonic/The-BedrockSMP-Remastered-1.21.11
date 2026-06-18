@@ -1,0 +1,9 @@
+{
+  "parent": "kitty:block/cube_sides",
+  "textures": {
+    "particle": "kitty:block/energy_block",
+    "bottom": "kitty:block/energy_block_bottom",
+    "top": "kitty:block/energy_block_top",
+    "side": "kitty:block/energy_block"
+  }
+}

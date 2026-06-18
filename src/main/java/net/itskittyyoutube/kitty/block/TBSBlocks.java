@@ -643,6 +643,10 @@ public class TBSBlocks {
             properties -> new Block(properties.mapColor(MapColor.GOLD).requiresTool()
                     .strength(30.0F, 1200.0F).sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
 
+    public static final Block ENERGY_BLOCK = registerBlock("energy_block",
+            properties -> new Block(properties.mapColor(MapColor.DIAMOND_BLUE).requiresTool()
+                    .strength(5.0F, 6.0F).sounds(BlockSoundGroup.METAL)));
+
     //Extra
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TBS.MOD_ID, name))));

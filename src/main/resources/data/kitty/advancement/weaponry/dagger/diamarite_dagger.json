@@ -11,7 +11,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kitty:weaponry/dagger/diamond_dagger",
+    "parent": "kitty:weaponry/dagger/energy_dagger",
     "criteria": {
       "dagger": {
         "trigger": "minecraft:inventory_changed",

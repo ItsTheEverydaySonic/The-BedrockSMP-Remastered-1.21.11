@@ -40,7 +40,6 @@
   "block.kitty.bedrock_trapdoor": "Bedrock Trapdoor",
   "block.kitty.obsidian_door": "Obsidian Door",
   "block.kitty.obsidian_trapdoor": "Obsidian Trapdoor",
-
   "block.kitty.planks_template": "Planks Template",
   "block.kitty.white_planks": "White Planks",
   "block.kitty.light_gray_planks": "Light Grey Planks",
@@ -58,7 +57,6 @@
   "block.kitty.purple_planks": "Purple Planks",
   "block.kitty.magenta_planks": "Magenta Planks",
   "block.kitty.pink_planks": "Pink Planks",
-
   "block.kitty.dark_oak_door_with_windows": "Dark Oak Door With Windows",
   "block.kitty.dark_oak_trapdoor_with_windows": "Dark Oak Trapdoor With Windows",
   "block.kitty.white_door": "White Door",
@@ -69,7 +67,6 @@
   "block.kitty.white_slab": "White Slab",
   "block.kitty.white_fence": "White Fence",
   "block.kitty.white_fence_gate": "White Fence Gate",
-
   "block.kitty.light_gray_door": "Light Grey Door",
   "block.kitty.light_gray_trapdoor": "Light Grey Trapdoor",
   "block.kitty.light_gray_button": "Light Grey Button",
@@ -78,7 +75,6 @@
   "block.kitty.light_gray_slab": "Light Grey Slab",
   "block.kitty.light_gray_fence": "Light Grey Fence",
   "block.kitty.light_gray_fence_gate": "Light Grey Fence Gate",
-
   "block.kitty.gray_door": "Grey Door",
   "block.kitty.gray_trapdoor": "Grey Trapdoor",
   "block.kitty.gray_button": "Grey Button",
@@ -87,7 +83,6 @@
   "block.kitty.gray_slab": "Grey Slab",
   "block.kitty.gray_fence": "Grey Fence",
   "block.kitty.gray_fence_gate": "Grey Fence Gate",
-
   "block.kitty.black_door": "Black Door",
   "block.kitty.black_trapdoor": "Black Trapdoor",
   "block.kitty.black_button": "Black Button",
@@ -96,7 +91,6 @@
   "block.kitty.black_slab": "Black Slab",
   "block.kitty.black_fence": "Black Fence",
   "block.kitty.black_fence_gate": "Black Fence Gate",
-
   "block.kitty.brown_door": "Brown Door",
   "block.kitty.brown_trapdoor": "Brown Trapdoor",
   "block.kitty.brown_button": "Brown Button",
@@ -105,7 +99,6 @@
   "block.kitty.brown_slab": "Brown Slab",
   "block.kitty.brown_fence": "Brown Fence",
   "block.kitty.brown_fence_gate": "Brown Fence Gate",
-
   "block.kitty.red_door": "Red Door",
   "block.kitty.red_trapdoor": "Red Trapdoor",
   "block.kitty.red_button": "Red Button",
@@ -114,7 +107,6 @@
   "block.kitty.red_slab": "Red Slab",
   "block.kitty.red_fence": "Red Fence",
   "block.kitty.red_fence_gate": "Red Fence Gate",
-
   "block.kitty.orange_door": "Orange Door",
   "block.kitty.orange_trapdoor": "Orange Trapdoor",
   "block.kitty.orange_button": "Orange Button",
@@ -123,7 +115,6 @@
   "block.kitty.orange_slab": "Orange Slab",
   "block.kitty.orange_fence": "Orange Fence",
   "block.kitty.orange_fence_gate": "Orange Fence Gate",
-
   "block.kitty.yellow_door": "Yellow Door",
   "block.kitty.yellow_trapdoor": "Yellow Trapdoor",
   "block.kitty.yellow_button": "Yellow Button",
@@ -132,7 +123,6 @@
   "block.kitty.yellow_slab": "Yellow Slab",
   "block.kitty.yellow_fence": "Yellow Fence",
   "block.kitty.yellow_fence_gate": "Yellow Fence Gate",
-
   "block.kitty.lime_door": "Lime Door",
   "block.kitty.lime_trapdoor": "Lime Trapdoor",
   "block.kitty.lime_button": "Lime Button",
@@ -141,7 +131,6 @@
   "block.kitty.lime_slab": "Lime Slab",
   "block.kitty.lime_fence": "Lime Fence",
   "block.kitty.lime_fence_gate": "Lime Fence Gate",
-
   "block.kitty.green_door": "Green Door",
   "block.kitty.green_trapdoor": "Green Trapdoor",
   "block.kitty.green_button": "Green Button",
@@ -150,7 +139,6 @@
   "block.kitty.green_slab": "Green Slab",
   "block.kitty.green_fence": "Green Fence",
   "block.kitty.green_fence_gate": "Green Fence Gate",
-
   "block.kitty.cyan_door": "Cyan Door",
   "block.kitty.cyan_trapdoor": "Cyan Trapdoor",
   "block.kitty.cyan_button": "Cyan Button",
@@ -159,7 +147,6 @@
   "block.kitty.cyan_slab": "Cyan Slab",
   "block.kitty.cyan_fence": "Cyan Fence",
   "block.kitty.cyan_fence_gate": "Cyan Fence Gate",
-
   "block.kitty.light_blue_door": "Light Blue Door",
   "block.kitty.light_blue_trapdoor": "Light Blue Trapdoor",
   "block.kitty.light_blue_button": "Light Blue Button",
@@ -168,7 +155,6 @@
   "block.kitty.light_blue_slab": "Light Blue Slab",
   "block.kitty.light_blue_fence": "Light Blue Fence",
   "block.kitty.light_blue_fence_gate": "Light Blue Fence Gate",
-
   "block.kitty.blue_door": "Blue Door",
   "block.kitty.blue_trapdoor": "Blue Trapdoor",
   "block.kitty.blue_button": "Blue Button",
@@ -177,7 +163,6 @@
   "block.kitty.blue_slab": "Blue Slab",
   "block.kitty.blue_fence": "Blue Fence",
   "block.kitty.blue_fence_gate": "Blue Fence Gate",
-
   "block.kitty.purple_door": "Purple Door",
   "block.kitty.purple_trapdoor": "Purple Trapdoor",
   "block.kitty.purple_button": "Purple Button",
@@ -186,7 +171,6 @@
   "block.kitty.purple_slab": "Purple Slab",
   "block.kitty.purple_fence": "Purple Fence",
   "block.kitty.purple_fence_gate": "Purple Fence Gate",
-
   "block.kitty.magenta_door": "Magenta Door",
   "block.kitty.magenta_trapdoor": "Magenta Trapdoor",
   "block.kitty.magenta_button": "Magenta Button",
@@ -195,7 +179,6 @@
   "block.kitty.magenta_slab": "Magenta Slab",
   "block.kitty.magenta_fence": "Magenta Fence",
   "block.kitty.magenta_fence_gate": "Magenta Fence Gate",
-
   "block.kitty.pink_door": "Pink Door",
   "block.kitty.pink_trapdoor": "Pink Trapdoor",
   "block.kitty.pink_button": "Pink Button",
@@ -204,7 +187,6 @@
   "block.kitty.pink_slab": "Pink Slab",
   "block.kitty.pink_fence": "Pink Fence",
   "block.kitty.pink_fence_gate": "Pink Fence Gate",
-
   "block.kitty.diamarite_block": "Block of Diamarite",
   "block.kitty.corruptionite_block": "Block of Corruptionite",
   "block.kitty.shelfshelf": "ShelfShelf",
@@ -215,6 +197,8 @@
   "block.kitty.diamarite_core": "§dDiamarite Core",
   "block.kitty.gilded_netherite_block": "Block of Gilded Netherite",
   "block.kitty.golden_debris": "Golden Debris",
+
+  "block.kitty.energy_block": "Block of Energy",
 
   "creativetab.kitty.bedrocksmp": "The-BedrockSMP",
   "creativetab.kitty.music_discs": "Music Discs",
@@ -368,6 +352,7 @@
   "item.kitty.corruptionite_scythe": "Corruptionite Scythe",
 
   "item.kitty.diamarite_mace": "Diamarite Mace",
+
   "item.kitty.doubled_mace": "Doubled Mace",
 
   "item.kitty.gilded_netherite_ingot": "Gilded Netherite Ingot",
@@ -403,33 +388,55 @@
   "item.kitty.corruptionite_spear": "Corruptionite Spear",
   "item.kitty.gilded_netherite_spear": "Gilded Netherite Spear",
 
+  "item.kitty.energy_gem": "Energy Gem",
+  "item.kitty.energy": "Energy",
+  "item.kitty.energy_horse_armor": "Energy Horse Armour",
+  "item.kitty.energy_helmet": "Energy Helmet",
+  "item.kitty.energy_chestplate": "Energy Chestplate",
+  "item.kitty.energy_leggings": "Energy Leggings",
+  "item.kitty.energy_boots": "Energy Boots",
+  "item.kitty.energy_pickaxe": "Energy Pickaxe",
+  "item.kitty.energy_axe": "Energy Axe",
+  "item.kitty.energy_sword": "Energy Sword",
+  "item.kitty.energy_shovel": "Energy Shovel",
+  "item.kitty.energy_hoe": "Energy Hoe",
+  "item.kitty.energy_dagger": "Energy Dagger",
+  "item.kitty.ultimate_armor_trim_smithing_template": "Smithing Template",
+  "item.kitty.energy_rod": "Energy Rod",
+  "item.kitty.energy_handle": "Energy Handle",
+  "item.kitty.energy_sickle": "Energy Sickle",
+  "item.kitty.energy_katana": "Energy Katana",
+  "item.kitty.energy_scythe": "Energy Scythe",
+  "item.kitty.energy_spear": "Energy Spear",
+
+  "item.kitty.dreadite_helmet": "Dreadful Hero Helmet",
+  "item.kitty.dreadite_chestplate": "Dreadful Hero Chestplate",
+  "item.kitty.dreadite_leggings": "Dreadful Hero Leggings",
+  "item.kitty.dreadite_boots": "Dreadful Hero Boots",
+  "item.kitty.dreadite_gem": "Dreadite Gem",
+
   "jukebox_song.kitty.template_disc": "ItsKittyYouTube - Template Disc",
   "jukebox_song.kitty.the_tale_of_toothless": "ItsKittyYouTube - The Tale of Toothless",
   "jukebox_song.kitty.bye_justin_hi_justin": "ItsKittyYouTube - The Bye Justin, Hi Justin Rap",
   "jukebox_song.kitty.steve_lava_chicken": "Jack Black - Steve's Lava Chicken Song (A Minecraft Movie)",
   "jukebox_song.kitty.lava_tearsstep": "ItsKittyYouTube - Lava Tearsstep (Tears, Pigstep, and 1.21.7 Lava Chicken in one disc!)",
-
   "jukebox_song.kitty.terrifying_tears": "A§4§km§ros R§4§kod§rdy & Its§4§kKit§rtyYou§4§kTube§r - Ter§4§krif§ryin§4§kg§r Te§4§kar§rs",
   "jukebox_song.kitty.ultra_terrifying_tears": "A§4§km§ros R§4§kod§rdy & Its§4§kKit§rtyYou§4§kTube§r - Ul§4§ktr§ra Ter§4§krif§ryin§4§kg§r Te§4§kar§rs",
-
   "jukebox_song.kitty.betterside": "ItsKittyYouTube - betterside",
   "jukebox_song.kitty.12": "ItsKittyYouTube - 12",
   "jukebox_song.kitty.bye_justin_hi_justin_remastered": "ItsKittyYouTube - The Bye Justin, Hi Justin Rap Remastered",
   "jukebox_song.kitty.explorer": "ItsKittyYouTube - Explorer (Phonk)",
   "jukebox_song.kitty.already_ahead": "ItsKittyYouTube - Already Ahead",
   "jukebox_song.kitty.dark_inside": "ItsKittyYouTube - Dark Inside",
-
   "jukebox_song.kitty.reversed_bye_justin_hi_justin": "ItsKittyYouTube - The Bye Justin, Hi Justin Rap (Reversed)",
   "jukebox_song.kitty.reversed_the_tale_of_toothless": "ItsKittyYouTube - The Tale of Toothless (Reversed)",
   "jukebox_song.kitty.reversed_steve_lava_chicken": "Jack Black - Steve's Lava Chicken Song (A Minecraft Movie, Reversed)",
   "jukebox_song.kitty.reversed_lava_tearsstep": "ItsKittyYouTube - Lava Tearsstep (Tears, Pigstep, and 1.21.7 Lava Chicken in one disc!, Reversed)",
-
-  "jukebox_song.kitty.reversed_terrifying_tears": "A§4§km§ros R§4§kod§rdy & Its§4§kKit§rtyYou§4§kTube§r - Ter§4§krif§ryin§4§kg§r Te§4§kar§rs (Reversed)",
-  "jukebox_song.kitty.reversed_ultra_terrifying_tears": "A§4§km§ros R§4§kod§rdy & Its§4§kKit§rtyYou§4§kTube§r - Ul§4§ktr§ra Ter§4§krif§ryin§4§kg§r Te§4§kar§rs (Reversed)",
-
-  "jukebox_song.kitty.reversed_betterside": "ItsKittyYouTube - betterside (Reversed)",
-  "jukebox_song.kitty.reversed_12": "ItsKittyYouTube - 12 (Reversed)",
-  "jukebox_song.kitty.reversed_bye_justin_hi_justin_remastered": "ItsKittyYouTube - The Bye Justin, Hi Justin Rap Remastered (Reversed)",
+  "jukebox_song.kitty.reversed_terrifying_tears": "A§4§km§ros R§4§kod§rdy & Its§4§kKit§rtyYou§4§kTube§r - Ter§4§krif§ryin§4§kg§r Te§4§kar§rs  (Reversed)",
+  "jukebox_song.kitty.reversed_ultra_terrifying_tears": "A§4§km§ros R§4§kod§rdy & Its§4§kKit§rtyYou§4§kTube§r - Ul§4§ktr§ra Ter§4§krif§ryin§4§kg§r Te§4§kar§rs  (Reversed)",
+  "jukebox_song.kitty.reversed_betterside": "ItsKittyYouTube - betterside  (Reversed)",
+  "jukebox_song.kitty.reversed_12": "ItsKittyYouTube - 12  (Reversed)",
+  "jukebox_song.kitty.reversed_bye_justin_hi_justin_remastered": "ItsKittyYouTube - The Bye Justin, Hi Justin Rap Remastered  (Reversed)",
   "jukebox_song.kitty.reversed_explorer": "ItsKittyYouTube - Explorer (Phonk, Reversed)",
   "jukebox_song.kitty.reversed_already_ahead": "ItsKittyYouTube - Already Ahead (Reversed)",
   "jukebox_song.kitty.reversed_dark_inside": "ItsKittyYouTube - Dark Inside (Reversed)",
@@ -482,6 +489,9 @@
   "subtitles.kitty.item.armor.equip_gilded_netherite": "Gilded Netherite armour clanks",
 
   "trim_material.kitty.steel": "Steel Material",
+
+  "trim_material.kitty.energy": "Energy Material",
+  "trim_pattern.kitty.ultimate": "Ultimate Armour Trim",
 
   "upgrade.kitty.steel_upgrade": "Steel Upgrade"
 }

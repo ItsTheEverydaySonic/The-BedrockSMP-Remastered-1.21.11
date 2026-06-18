@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:energy_katana",
+      "count": 1
+    },
+    "title": "Energy Katana",
+    "description": "Acquire a Energy Katana",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/katana/diamond_katana",
+  "criteria": {
+    "katana": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:energy_katana"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "katana"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

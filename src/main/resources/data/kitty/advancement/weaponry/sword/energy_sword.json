@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:energy_sword",
+      "count": 1
+    },
+    "title": "Energy Sword",
+    "description": "Acquire a Energy Sword",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/sword/diamond_sword",
+  "criteria": {
+    "sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:energy_sword"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sword"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

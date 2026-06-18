@@ -1,0 +1,62 @@
+{
+  "parent": "minecraft:story/mine_energy_gem",
+  "criteria": {
+    "energy_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:energy_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "energy_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:energy_chestplate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "energy_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:energy_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "energy_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:energy_leggings"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Energy armor saves lives and looks neat",
+    "icon": {
+      "count": 1,
+      "id": "kitty:energy_chestplate"
+    },
+    "title": "Cover Me with Energy"
+    },
+  "requirements": [
+    [
+      "energy_helmet",
+      "energy_chestplate",
+      "energy_leggings",
+      "energy_boots"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

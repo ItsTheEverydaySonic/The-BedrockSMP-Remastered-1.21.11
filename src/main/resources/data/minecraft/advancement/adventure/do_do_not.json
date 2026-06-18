@@ -13,16 +13,12 @@
     }
   },
   "display": {
-    "description": {
-      "translate": "§5Acquire the Ter§4§krif§ryin§4§kg§r§5 Te§4§kar§rs§5 music disc"
-    },
+    "description": "§5Acquire the Ter§4§krif§ryin§4§kg§r§5 Te§4§kar§rs§5 music disc",
     "icon": {
       "count": 1,
       "id": "kitty:music_disc_terrifying_tears"
     },
-    "title": {
-      "translate": "§5Ter§4§krif§r§5yin§4§kg§r§5 Te§4§kar§r§5s"
-    },
+    "title": "§5Ter§4§krif§r§5yin§4§kg§r§5 Te§4§kar§r§5s",
     "frame": "challenge"
   },
   "requirements": [

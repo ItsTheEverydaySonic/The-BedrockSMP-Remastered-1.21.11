@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.itskittyyoutube.kitty.block.TBSBlocks;
 import net.itskittyyoutube.kitty.item.TBSItems;
-import net.itskittyyoutube.kitty.util.TBSTags;
+import net.itskittyyoutube.kitty.util.TBSItemTags;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -263,7 +263,7 @@ public class TBSItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(TBSBlocks.BEDROCK_TRAPDOOR.asItem())
                 .add(TBSBlocks.OBSIDIAN_TRAPDOOR.asItem());
 
-        valueLookupBuilder(TBSTags.Items.CHERRY_BIRCH_LOGS)
+        valueLookupBuilder(TBSItemTags.CHERRY_BIRCH_LOGS)
                 .add(TBSBlocks.CHERRY_BIRCH_LOG.asItem())
                 .add(TBSBlocks.CHERRY_BIRCH_WOOD.asItem())
                 .add(TBSBlocks.STRIPPED_CHERRY_BIRCH_LOG.asItem())
@@ -295,14 +295,14 @@ public class TBSItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(TBSItems.REVERSED_PANCAKE)
                 .add(TBSItems.REVERSED_WAFFLE);
 
-        valueLookupBuilder(TBSTags.Items.HEADS)
+        valueLookupBuilder(TBSItemTags.HEADS)
                 .add(Items.PLAYER_HEAD)
                 .add(Items.ZOMBIE_HEAD)
                 .add(Items.CREEPER_HEAD)
                 .add(Items.PIGLIN_HEAD)
                 .add(Items.DRAGON_HEAD);
 
-        valueLookupBuilder(TBSTags.Items.STEEL_EQUIPMENT_REPAIR)
+        valueLookupBuilder(TBSItemTags.STEEL_EQUIPMENT_REPAIR)
                 .add(TBSItems.STEEL_INGOT)
                 .add(Items.IRON_INGOT)
                 .add(Items.GOLD_INGOT);
@@ -314,6 +314,7 @@ public class TBSItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(TBSItems.KATARA_KNIFE)
                 .add(TBSItems.BYZANTIUM_SWORD)
                 .add(TBSItems.GILDED_NETHERITE_SWORD)
+                .add(TBSItems.ENERGY_SWORD)
 
                 .add(TBSItems.WOODEN_DAGGER)
                 .add(TBSItems.COPPER_DAGGER)
@@ -327,6 +328,7 @@ public class TBSItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(TBSItems.DIAMARITE_DAGGER)
                 .add(TBSItems.CORRUPTIONITE_DAGGER)
                 .add(TBSItems.GILDED_NETHERITE_DAGGER)
+                .add(TBSItems.ENERGY_DAGGER)
 
                 .add(TBSItems.WOODEN_SICKLE)
                 .add(TBSItems.COPPER_SICKLE)
@@ -340,6 +342,7 @@ public class TBSItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(TBSItems.DIAMARITE_SICKLE)
                 .add(TBSItems.CORRUPTIONITE_SICKLE)
                 .add(TBSItems.GILDED_NETHERITE_SICKLE)
+                .add(TBSItems.ENERGY_SICKLE)
 
                 .add(TBSItems.WOODEN_KATANA)
                 .add(TBSItems.COPPER_KATANA)
@@ -353,6 +356,7 @@ public class TBSItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(TBSItems.DIAMARITE_KATANA)
                 .add(TBSItems.CORRUPTIONITE_KATANA)
                 .add(TBSItems.GILDED_NETHERITE_KATANA)
+                .add(TBSItems.ENERGY_KATANA)
 
                 .add(TBSItems.WOODEN_SCYTHE)
                 .add(TBSItems.COPPER_SCYTHE)
@@ -365,40 +369,45 @@ public class TBSItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(TBSItems.NETHERITE_SCYTHE)
                 .add(TBSItems.DIAMARITE_SCYTHE)
                 .add(TBSItems.CORRUPTIONITE_SCYTHE)
-                .add(TBSItems.GILDED_NETHERITE_SCYTHE);
+                .add(TBSItems.GILDED_NETHERITE_SCYTHE)
+                .add(TBSItems.ENERGY_SCYTHE);
 
         valueLookupBuilder(ItemTags.SHOVELS)
                 .add(TBSItems.STEEL_SHOVEL)
                 .add(TBSItems.DIAMARITE_SHOVEL)
                 .add(TBSItems.CORRUPTIONITE_SHOVEL)
                 .add(TBSItems.BYZANTIUM_SHOVEL)
-                .add(TBSItems.GILDED_NETHERITE_SHOVEL);
+                .add(TBSItems.GILDED_NETHERITE_SHOVEL)
+                .add(TBSItems.ENERGY_SHOVEL);
 
         valueLookupBuilder(ItemTags.PICKAXES)
                 .add(TBSItems.STEEL_PICKAXE)
                 .add(TBSItems.DIAMARITE_PICKAXE)
                 .add(TBSItems.CORRUPTIONITE_PICKAXE)
                 .add(TBSItems.BYZANTIUM_PICKAXE)
-                .add(TBSItems.GILDED_NETHERITE_PICKAXE);
+                .add(TBSItems.GILDED_NETHERITE_PICKAXE)
+                .add(TBSItems.ENERGY_PICKAXE);
 
         valueLookupBuilder(ItemTags.AXES)
                 .add(TBSItems.STEEL_AXE)
                 .add(TBSItems.DIAMARITE_AXE)
                 .add(TBSItems.CORRUPTIONITE_AXE)
                 .add(TBSItems.BYZANTIUM_AXE)
-                .add(TBSItems.GILDED_NETHERITE_AXE);
+                .add(TBSItems.GILDED_NETHERITE_AXE)
+                .add(TBSItems.ENERGY_AXE);
 
         valueLookupBuilder(ItemTags.HOES)
                 .add(TBSItems.STEEL_HOE)
                 .add(TBSItems.DIAMARITE_HOE)
                 .add(TBSItems.CORRUPTIONITE_HOE)
                 .add(TBSItems.BYZANTIUM_HOE)
-                .add(TBSItems.GILDED_NETHERITE_HOE);
+                .add(TBSItems.GILDED_NETHERITE_HOE)
+                .add(TBSItems.ENERGY_HOE);
 
         valueLookupBuilder(ItemTags.TRIM_MATERIALS)
                 .add(TBSItems.STEEL_INGOT);
 
-        valueLookupBuilder(TBSTags.Items.NETHERITE_EQUIPMENT_REPAIR)
+        valueLookupBuilder(TBSItemTags.NETHERITE_EQUIPMENT_REPAIR)
                 .add(Items.DIAMOND)
                 .add(Items.NETHERITE_INGOT)
                 .add(TBSItems.DIAMARITE_INGOT)
@@ -425,33 +434,51 @@ public class TBSItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(TBSItems.GILDED_NETHERITE_HELMET)
                 .add(TBSItems.GILDED_NETHERITE_CHESTPLATE)
                 .add(TBSItems.GILDED_NETHERITE_LEGGINGS)
-                .add(TBSItems.GILDED_NETHERITE_BOOTS);
+                .add(TBSItems.GILDED_NETHERITE_BOOTS)
+
+                .add(TBSItems.ENERGY_HELMET)
+                .add(TBSItems.ENERGY_CHESTPLATE)
+                .add(TBSItems.ENERGY_LEGGINGS)
+                .add(TBSItems.ENERGY_BOOTS)
+
+                .add(TBSItems.DREADITE_HELMET)
+                .add(TBSItems.DREADITE_CHESTPLATE)
+                .add(TBSItems.DREADITE_LEGGINGS)
+                .add(TBSItems.DREADITE_BOOTS);
 
         valueLookupBuilder(ItemTags.HEAD_ARMOR)
                 .add(TBSItems.DIAMARITE_HELMET)
                 .add(TBSItems.CORRUPTIONITE_HELMET)
                 .add(TBSItems.BYZANTIUM_HELMET)
-                .add(TBSItems.GILDED_NETHERITE_HELMET);
+                .add(TBSItems.GILDED_NETHERITE_HELMET)
+                .add(TBSItems.ENERGY_HELMET)
+                .add(TBSItems.DREADITE_HELMET);
 
         valueLookupBuilder(ItemTags.CHEST_ARMOR)
                 .add(TBSItems.DIAMARITE_CHESTPLATE)
                 .add(TBSItems.CORRUPTIONITE_CHESTPLATE)
                 .add(TBSItems.BYZANTIUM_CHESTPLATE)
-                .add(TBSItems.GILDED_NETHERITE_CHESTPLATE);
+                .add(TBSItems.GILDED_NETHERITE_CHESTPLATE)
+                .add(TBSItems.ENERGY_CHESTPLATE)
+                .add(TBSItems.DREADITE_CHESTPLATE);
 
         valueLookupBuilder(ItemTags.LEG_ARMOR)
                 .add(TBSItems.DIAMARITE_LEGGINGS)
                 .add(TBSItems.CORRUPTIONITE_LEGGINGS)
                 .add(TBSItems.BYZANTIUM_LEGGINGS)
-                .add(TBSItems.GILDED_NETHERITE_LEGGINGS);
+                .add(TBSItems.GILDED_NETHERITE_LEGGINGS)
+                .add(TBSItems.ENERGY_LEGGINGS)
+                .add(TBSItems.DREADITE_LEGGINGS);
 
         valueLookupBuilder(ItemTags.FOOT_ARMOR)
                 .add(TBSItems.DIAMARITE_BOOTS)
                 .add(TBSItems.CORRUPTIONITE_BOOTS)
                 .add(TBSItems.BYZANTIUM_BOOTS)
-                .add(TBSItems.GILDED_NETHERITE_BOOTS);
+                .add(TBSItems.GILDED_NETHERITE_BOOTS)
+                .add(TBSItems.ENERGY_BOOTS)
+                .add(TBSItems.DREADITE_BOOTS);
 
-        valueLookupBuilder(TBSTags.Items.INGOTS)
+        valueLookupBuilder(TBSItemTags.INGOTS)
                 .add(Items.IRON_INGOT)
                 .add(Items.GOLD_INGOT)
                 .add(Items.COPPER_INGOT)
@@ -471,33 +498,33 @@ public class TBSItemTagProvider extends FabricTagProvider.ItemTagProvider{
         //valueLookupBuilder(ItemTags.WOODEN_SHELVES)
                 //.add(TheBedrockSMPBlocks.SHELFSHELF.asItem());
 
-        valueLookupBuilder(TBSTags.Items.AMETHYST_TOOL_MATERIALS)
+        valueLookupBuilder(TBSItemTags.AMETHYST_TOOL_MATERIALS)
                 .add(Items.AMETHYST_SHARD)
                 .add(TBSItems.AMETHYST_INGOT);
 
-        valueLookupBuilder(TBSTags.Items.BYZANTIUM_TOOL_MATERIALS)
+        valueLookupBuilder(TBSItemTags.BYZANTIUM_TOOL_MATERIALS)
                 .add(TBSItems.BYZANTIUM_INGOT);
 
-        valueLookupBuilder(TBSTags.Items.GOLDEN_BIRCH_LOGS)
+        valueLookupBuilder(TBSItemTags.GOLDEN_BIRCH_LOGS)
                 .add(TBSBlocks.GOLDEN_BIRCH_LOG.asItem())
                 .add(TBSBlocks.GOLDEN_BIRCH_WOOD.asItem())
                 .add(TBSBlocks.STRIPPED_GOLDEN_BIRCH_LOG.asItem())
                 .add(TBSBlocks.STRIPPED_GOLDEN_BIRCH_WOOD.asItem());
 
-        valueLookupBuilder(TBSTags.Items.BYZANTIUM_EQUIPMENT_REPAIR)
+        valueLookupBuilder(TBSItemTags.BYZANTIUM_EQUIPMENT_REPAIR)
                 .add(TBSItems.BYZANTIUM_INGOT)
                 .add(Items.GOLD_INGOT)
                 .add(Items.AMETHYST_SHARD)
                 .add(TBSItems.AMETHYST_INGOT);
 
-        valueLookupBuilder(TBSTags.Items.STEEL_TOOL_MATERIALS)
+        valueLookupBuilder(TBSItemTags.STEEL_TOOL_MATERIALS)
                 .add(TBSItems.STEEL_INGOT);
 
-        valueLookupBuilder(TBSTags.Items.DIAMARITE_TOOL_MATERIALS)
+        valueLookupBuilder(TBSItemTags.DIAMARITE_TOOL_MATERIALS)
                 .add(TBSItems.DIAMARITE)
                 .add(TBSItems.DIAMARITE_INGOT);
 
-        valueLookupBuilder(TBSTags.Items.CORRUPTIONITE_TOOL_MATERIALS)
+        valueLookupBuilder(TBSItemTags.CORRUPTIONITE_TOOL_MATERIALS)
                 .add(TBSItems.CORRUPTIONITE_INGOT);
 
         //Mace Enchantes
@@ -517,10 +544,11 @@ public class TBSItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(TBSItems.DIAMARITE_MACE)
                 .add(TBSItems.DOUBLED_MACE);
 
-        valueLookupBuilder(TBSTags.Items.GILDED_NETHERITE_TOOL_MATERIALS)
+        valueLookupBuilder(TBSItemTags.GILDED_NETHERITE_TOOL_MATERIALS)
                 .add(TBSItems.GILDED_NETHERITE_INGOT);
 
-        valueLookupBuilder(TBSTags.Items.ENERGY_EQUIPMENT_REPAIR)
+        valueLookupBuilder(TBSItemTags.ENERGY_EQUIPMENT_REPAIR)
+                .add(TBSItems.ENERGY_GEM)
                 .add(Items.DIAMOND)
                 .add(TBSItems.DIAMOND_INGOT);
 
@@ -529,6 +557,20 @@ public class TBSItemTagProvider extends FabricTagProvider.ItemTagProvider{
                 .add(TBSItems.BYZANTIUM_SPEAR)
                 .add(TBSItems.GILDED_NETHERITE_SPEAR)
                 .add(TBSItems.DIAMARITE_SPEAR)
-                .add(TBSItems.CORRUPTIONITE_SPEAR);
+                .add(TBSItems.CORRUPTIONITE_SPEAR)
+                .add(TBSItems.ENERGY_SPEAR);
+
+        valueLookupBuilder(TBSItemTags.ENERGY_TOOL_MATERIALS)
+                .add(TBSItems.ENERGY_GEM);
+
+        valueLookupBuilder(TBSItemTags.DREADITE_EQUIPMENT_REPAIR)
+                .add(TBSItems.DREADITE_GEM)
+                .add(Items.DIAMOND)
+                .add(TBSItems.DIAMOND_INGOT)
+                .add(Items.REDSTONE);
+
+        valueLookupBuilder(TBSItemTags.STICK_REPAIR)
+                .add(Items.STICK)
+                .add(TBSItems.HANDLE);
     }
 }

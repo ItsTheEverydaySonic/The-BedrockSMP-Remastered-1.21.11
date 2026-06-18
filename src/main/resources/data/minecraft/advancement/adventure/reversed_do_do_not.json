@@ -13,16 +13,12 @@
     }
   },
   "display": {
-    "description": {
-      "translate": "§5Acquire the Re§4§kver§r§5sed Ter§4§krif§ryin§4§kg§r§5 Te§4§kar§rs§5 music disc"
-    },
+    "description": "§5Acquire the Re§4§kver§r§5sed Ter§4§krif§ryin§4§kg§r§5 Te§4§kar§rs§5 music disc",
     "icon": {
       "count": 1,
       "id": "kitty:music_disc_reversed_terrifying_tears"
     },
-    "title": {
-      "translate": "§5Re§4§kver§r§5sed Ter§4§krif§r§5yin§4§kg§r§5 Te§4§kar§r§5s"
-    },
+    "title": "§5Re§4§kver§r§5sed Ter§4§krif§r§5yin§4§kg§r§5 Te§4§kar§r§5s",
     "frame": "challenge"
   },
   "requirements": [

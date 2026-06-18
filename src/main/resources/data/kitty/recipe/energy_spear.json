@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "kitty:energy_handle",
+    "X": "#kitty:energy_tool_materials",
+    "Z": "kitty:energy_rod"
+  },
+  "pattern": [
+    "  X",
+    " Z ",
+    "#  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kitty:energy_spear"
+  }
+}

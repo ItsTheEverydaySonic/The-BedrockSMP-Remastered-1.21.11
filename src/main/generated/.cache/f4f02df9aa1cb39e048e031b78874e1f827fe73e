@@ -2,9 +2,9 @@
 01a3e66dc1885e9041954641dc2510dbb8d8cce4 data/minecraft/tags/block/doors.json
 1a433a04e918e647ec3ab6e56cbbac826576e06b data/minecraft/tags/block/fence_gates.json
 96cf9cfc08405329475d2af6d8d2ea0ac8c918e9 data/minecraft/tags/block/logs_that_burn.json
-a3fbe209a9aff9177152dbdadeac1485f7a5eb7e data/minecraft/tags/block/mineable/pickaxe.json
+71e51434d98fbb5bffc2c2127b61e6a97c11d9fc data/minecraft/tags/block/mineable/pickaxe.json
 9cd811632594440ef738f84c96e37d89327430a5 data/minecraft/tags/block/needs_diamond_tool.json
-9c7e0fe18c6e3c361b6f8a9a2ce6ddad241b4252 data/minecraft/tags/block/needs_iron_tool.json
+d97fc9bd7dab373583b04c0aac084ef0e9847e3a data/minecraft/tags/block/needs_iron_tool.json
 f0ccea7e780dc5a1956a70b82f2e74e684fbac77 data/minecraft/tags/block/needs_stone_tool.json
 77dcab475172b7ca45db23920d51b51328829c03 data/minecraft/tags/block/trapdoors.json
 952b6d1c3b45fcc90a966a066250a33d3d916eb5 data/minecraft/tags/block/wooden_buttons.json

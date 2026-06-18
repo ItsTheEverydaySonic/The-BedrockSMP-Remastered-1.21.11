@@ -2,15 +2,11 @@ package net.itskittyyoutube.kitty.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.itskittyyoutube.kitty.TBS;
-import net.itskittyyoutube.kitty.block.TBSBlocks;
 import net.itskittyyoutube.kitty.material.TBSArmorMaterials;
 import net.itskittyyoutube.kitty.material.TBSToolMaterials;
 import net.itskittyyoutube.kitty.sounds.TBSJukeboxSongs;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.component.DataComponentTypes;
-import net.minecraft.component.type.ContainerComponent;
-import net.minecraft.component.type.WeaponComponent;
+import net.minecraft.component.type.*;
 import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
@@ -19,10 +15,13 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.Unit;
 
-import java.util.function.BiFunction;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Optional;
 import java.util.function.Function;
-import java.util.function.UnaryOperator;
 
 public class TBSItems {
     //Music Discs
@@ -89,7 +88,15 @@ public class TBSItems {
     public static final Item BEDROCKSMP_ICON = registerItem("bedrocksmp_icon",
             settings -> new Item(settings.rarity(Rarity.EPIC).maxCount(64).fireproof()));
     public static final Item BIG_STICK = registerItem("big_stick",
-            settings -> new Item(settings.maxCount(64)));
+            setting -> new Item(setting.spear(TBSToolMaterials.STICK,
+                    1.15F, 1.2F, 0.4F, 2.5F,
+                    7.0F, 5.5F, 5.1F, 8.75F, 4.6F)
+                    .maxCount(1).attributeModifiers(AttributeModifiersComponent.builder().build()).component(DataComponentTypes.MAX_DAMAGE, 0).component(DataComponentTypes.UNBREAKABLE, Unit.INSTANCE)
+                    .component(DataComponentTypes.TOOLTIP_DISPLAY, new TooltipDisplayComponent(false, new java.util.LinkedHashSet<>(java.util.List.of(DataComponentTypes.UNBREAKABLE))))
+                    .component(DataComponentTypes.PIERCING_WEAPON, new PiercingWeaponComponent(true, false, Optional.empty(), Optional.empty()))
+                    .component(DataComponentTypes.KINETIC_WEAPON, new KineticWeaponComponent(10, Math.round(0.75F * 20.0F), KineticWeaponComponent.Condition.ofMinSpeed(Math.round(5.0F * 20.0F), 14.0F),
+                            KineticWeaponComponent.Condition.ofMinSpeed(Math.round(10.0F * 20.0F), 10.0F), KineticWeaponComponent.Condition.ofMinRelativeSpeed(Math.round(15.0F * 20.0F), 4.6F),
+                            0.38F, 0.7F, Optional.empty(), Optional.empty()))));
     public static final Item CURSED_EMERALD = registerItem("cursed_emerald",
             settings -> new Item(settings.rarity(Rarity.EPIC).maxCount(1)));
     public static final Item YOUTUBE_LOGO = registerItem("youtube_logo",
@@ -147,61 +154,85 @@ public class TBSItems {
     public static final Item DUCT_TAPE = registerItem("duct_tape",
             settings -> new Item(settings.maxCount(64)));
 
+    public static final Item ENERGY = registerItem("energy",
+            settings -> new Item(settings.maxCount(64).rarity(Rarity.EPIC)));
+    public static final Item ENERGY_GEM = registerItem("energy_gem",
+            settings -> new Item(settings.maxCount(64).rarity(Rarity.EPIC)));
+
+    public static final Item ENERGY_ROD = registerItem("energy_rod",
+            settings -> new Item(settings.maxCount(64).rarity(Rarity.EPIC)));
+    public static final Item ENERGY_HANDLE = registerItem("energy_handle",
+            settings -> new Item(settings.maxCount(64).rarity(Rarity.EPIC)));
+
+    public static final Item DREADITE_GEM = registerItem("dreadite_gem",
+            settings -> new Item(settings.maxCount(64)));
+
     //Tools
     public static final Item STEEL_SWORD = registerItem("steel_sword",
-            setting -> new Item(setting.sword(TBSToolMaterials.STEEL_EQUIPMENT, 3.0F, -2.4F)));
+            setting -> new Item(setting.sword(TBSToolMaterials.STEEL, 3.0F, -2.4F)));
     public static final Item STEEL_SHOVEL = registerItem("steel_shovel",
-            setting -> new ShovelItem(TBSToolMaterials.STEEL_EQUIPMENT, 1.5F, -3.0F, setting));
+            setting -> new ShovelItem(TBSToolMaterials.STEEL, 1.5F, -3.0F, setting));
     public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe",
-            setting -> new Item(setting.pickaxe(TBSToolMaterials.STEEL_EQUIPMENT, 1.0F, -2.8F)));
+            setting -> new Item(setting.pickaxe(TBSToolMaterials.STEEL, 1.0F, -2.8F)));
     public static final Item STEEL_AXE = registerItem("steel_axe",
-            setting -> new AxeItem(TBSToolMaterials.STEEL_EQUIPMENT, 6.0F, -3.1F, setting));
+            setting -> new AxeItem(TBSToolMaterials.STEEL, 6.0F, -3.1F, setting));
     public static final Item STEEL_HOE = registerItem("steel_hoe",
-            setting -> new HoeItem(TBSToolMaterials.STEEL_EQUIPMENT, -2.0F, -1.0F, setting));
+            setting -> new HoeItem(TBSToolMaterials.STEEL, -2.0F, -1.0F, setting));
     public static final Item KATARA_KNIFE = registerItem("katara_knife",
-            setting -> new Item(setting.sword(TBSToolMaterials.STEEL_EQUIPMENT, 2.0F, -2.4F)));
+            setting -> new Item(setting.sword(TBSToolMaterials.STEEL, 2.0F, -2.4F)));
     public static final Item DIAMARITE_SWORD = registerItem("diamarite_sword",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 3.0F, -2.4F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 3.0F, -2.4F).fireproof()));
     public static final Item DIAMARITE_SHOVEL = registerItem("diamarite_shovel",
-            setting -> new ShovelItem(TBSToolMaterials.NETHERITE_EQUIPMENT, 1.5F, -3.0F, setting.fireproof()));
+            setting -> new ShovelItem(TBSToolMaterials.NETHERITE2, 1.5F, -3.0F, setting.fireproof()));
     public static final Item DIAMARITE_PICKAXE = registerItem("diamarite_pickaxe",
-            setting -> new Item(setting.pickaxe(TBSToolMaterials.NETHERITE_EQUIPMENT, 1.0F, -2.8F).fireproof()));
+            setting -> new Item(setting.pickaxe(TBSToolMaterials.NETHERITE2, 1.0F, -2.8F).fireproof()));
     public static final Item DIAMARITE_AXE = registerItem("diamarite_axe",
-            setting -> new AxeItem(TBSToolMaterials.NETHERITE_EQUIPMENT, 5.0F, -3.0F, setting.fireproof()));
+            setting -> new AxeItem(TBSToolMaterials.NETHERITE2, 5.0F, -3.0F, setting.fireproof()));
     public static final Item DIAMARITE_HOE = registerItem("diamarite_hoe",
-            setting -> new HoeItem(TBSToolMaterials.NETHERITE_EQUIPMENT, -4.0F, 0.0F, setting.fireproof()));
+            setting -> new HoeItem(TBSToolMaterials.NETHERITE2, -4.0F, 0.0F, setting.fireproof()));
     public static final Item CORRUPTIONITE_SWORD = registerItem("corruptionite_sword",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 3.0F, -2.4F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 3.0F, -2.4F).fireproof()));
     public static final Item CORRUPTIONITE_SHOVEL = registerItem("corruptionite_shovel",
-            setting -> new ShovelItem(TBSToolMaterials.NETHERITE_EQUIPMENT, 1.5F, -3.0F, setting.fireproof()));
+            setting -> new ShovelItem(TBSToolMaterials.NETHERITE2, 1.5F, -3.0F, setting.fireproof()));
     public static final Item CORRUPTIONITE_PICKAXE = registerItem("corruptionite_pickaxe",
-            setting -> new Item(setting.pickaxe(TBSToolMaterials.NETHERITE_EQUIPMENT, 1.0F, -2.8F).fireproof()));
+            setting -> new Item(setting.pickaxe(TBSToolMaterials.NETHERITE2, 1.0F, -2.8F).fireproof()));
     public static final Item CORRUPTIONITE_AXE = registerItem("corruptionite_axe",
-            setting -> new AxeItem(TBSToolMaterials.NETHERITE_EQUIPMENT, 5.0F, -3.0F, setting.fireproof()));
+            setting -> new AxeItem(TBSToolMaterials.NETHERITE2, 5.0F, -3.0F, setting.fireproof()));
     public static final Item CORRUPTIONITE_HOE = registerItem("corruptionite_hoe",
-            setting -> new HoeItem(TBSToolMaterials.NETHERITE_EQUIPMENT, -4.0F, 0.0F, setting.fireproof()));
+            setting -> new HoeItem(TBSToolMaterials.NETHERITE2, -4.0F, 0.0F, setting.fireproof()));
     public static final Item BYZANTIUM_SWORD = registerItem("byzantium_sword",
-            setting -> new Item(setting.sword(TBSToolMaterials.BYZANTIUM_EQUIPMENT, 3.0F, -2.4F)));
+            setting -> new Item(setting.sword(TBSToolMaterials.BYZANTIUM, 3.0F, -2.4F)));
     public static final Item BYZANTIUM_SHOVEL = registerItem("byzantium_shovel",
-            setting -> new ShovelItem(TBSToolMaterials.BYZANTIUM_EQUIPMENT, 1.5F, -3.0F, setting));
+            setting -> new ShovelItem(TBSToolMaterials.BYZANTIUM, 1.5F, -3.0F, setting));
     public static final Item BYZANTIUM_PICKAXE = registerItem("byzantium_pickaxe",
-            setting -> new Item(setting.pickaxe(TBSToolMaterials.BYZANTIUM_EQUIPMENT, 1.0F, -2.8F)));
+            setting -> new Item(setting.pickaxe(TBSToolMaterials.BYZANTIUM, 1.0F, -2.8F)));
     public static final Item BYZANTIUM_AXE = registerItem("byzantium_axe",
-            setting -> new AxeItem(TBSToolMaterials.BYZANTIUM_EQUIPMENT, 6.0F, -3.1F, setting));
+            setting -> new AxeItem(TBSToolMaterials.BYZANTIUM, 6.0F, -3.1F, setting));
     public static final Item BYZANTIUM_HOE = registerItem("byzantium_hoe",
-            setting -> new HoeItem(TBSToolMaterials.BYZANTIUM_EQUIPMENT, -2.0F, -1.0F, setting));
+            setting -> new HoeItem(TBSToolMaterials.BYZANTIUM, -2.0F, -1.0F, setting));
     public static final Item GILDED_NETHERITE_SWORD = registerItem("gilded_netherite_sword",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 3.0F, -2.4F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 3.0F, -2.4F).fireproof()));
     public static final Item GILDED_NETHERITE_SHOVEL = registerItem("gilded_netherite_shovel",
-            setting -> new ShovelItem(TBSToolMaterials.NETHERITE_EQUIPMENT, 1.5F, -3.0F, setting.fireproof()));
+            setting -> new ShovelItem(TBSToolMaterials.NETHERITE2, 1.5F, -3.0F, setting.fireproof()));
     public static final Item GILDED_NETHERITE_PICKAXE = registerItem("gilded_netherite_pickaxe",
-            setting -> new Item(setting.pickaxe(TBSToolMaterials.NETHERITE_EQUIPMENT, 1.0F, -2.8F).fireproof()));
+            setting -> new Item(setting.pickaxe(TBSToolMaterials.NETHERITE2, 1.0F, -2.8F).fireproof()));
     public static final Item GILDED_NETHERITE_AXE = registerItem("gilded_netherite_axe",
-            setting -> new AxeItem(TBSToolMaterials.NETHERITE_EQUIPMENT, 5.0F, -3.0F, setting.fireproof()));
+            setting -> new AxeItem(TBSToolMaterials.NETHERITE2, 5.0F, -3.0F, setting.fireproof()));
     public static final Item GILDED_NETHERITE_HOE = registerItem("gilded_netherite_hoe",
-            setting -> new HoeItem(TBSToolMaterials.NETHERITE_EQUIPMENT, -4.0F, 0.0F, setting.fireproof()));
+            setting -> new HoeItem(TBSToolMaterials.NETHERITE2, -4.0F, 0.0F, setting.fireproof()));
 
-    //Armor
+    public static final Item ENERGY_SWORD = registerItem("energy_sword",
+            setting -> new Item(setting.sword(TBSToolMaterials.ENERGY, 3.0F, -2.4F)));
+    public static final Item ENERGY_SHOVEL = registerItem("energy_shovel",
+            setting -> new ShovelItem(TBSToolMaterials.ENERGY, 1.5F, -3.0F, setting));
+    public static final Item ENERGY_PICKAXE = registerItem("energy_pickaxe",
+            setting -> new Item(setting.pickaxe(TBSToolMaterials.ENERGY, 1.0F, -2.8F)));
+    public static final Item ENERGY_AXE = registerItem("energy_axe",
+            setting -> new AxeItem(TBSToolMaterials.ENERGY, 5.0F, -3.0F, setting));
+    public static final Item ENERGY_HOE = registerItem("energy_hoe",
+            setting -> new HoeItem(TBSToolMaterials.ENERGY, -3.0F, 0.0F, setting));
+
+    //Armour
     public static final Item DIAMARITE_HELMET = registerItem("diamarite_helmet",
             setting -> new Item(setting.armor(TBSArmorMaterials.DIAMARITE, EquipmentType.HELMET).fireproof()));
     public static final Item DIAMARITE_CHESTPLATE = registerItem("diamarite_chestplate",
@@ -235,6 +266,24 @@ public class TBSItems {
     public static final Item GILDED_NETHERITE_BOOTS = registerItem("gilded_netherite_boots",
             setting -> new Item(setting.armor(TBSArmorMaterials.GILDED_NETHERITE, EquipmentType.BOOTS).fireproof()));
 
+    public static final Item ENERGY_HELMET = registerItem("energy_helmet",
+            setting -> new Item(setting.armor(TBSArmorMaterials.ENERGY, EquipmentType.HELMET)));
+    public static final Item ENERGY_CHESTPLATE = registerItem("energy_chestplate",
+            setting -> new Item(setting.armor(TBSArmorMaterials.ENERGY, EquipmentType.CHESTPLATE)));
+    public static final Item ENERGY_LEGGINGS = registerItem("energy_leggings",
+            setting -> new Item(setting.armor(TBSArmorMaterials.ENERGY, EquipmentType.LEGGINGS)));
+    public static final Item ENERGY_BOOTS = registerItem("energy_boots",
+            setting -> new Item(setting.armor(TBSArmorMaterials.ENERGY, EquipmentType.BOOTS)));
+
+    public static final Item DREADITE_HELMET = registerItem("dreadite_helmet",
+            setting -> new Item(setting.armor(TBSArmorMaterials.DREADITE, EquipmentType.HELMET).fireproof()));
+    public static final Item DREADITE_CHESTPLATE = registerItem("dreadite_chestplate",
+            setting -> new Item(setting.armor(TBSArmorMaterials.DREADITE, EquipmentType.CHESTPLATE).fireproof()));
+    public static final Item DREADITE_LEGGINGS = registerItem("dreadite_leggings",
+            setting -> new Item(setting.armor(TBSArmorMaterials.DREADITE, EquipmentType.LEGGINGS).fireproof()));
+    public static final Item DREADITE_BOOTS = registerItem("dreadite_boots",
+            setting -> new Item(setting.armor(TBSArmorMaterials.DREADITE, EquipmentType.BOOTS).fireproof()));
+
     //Dagger
     public static final Item WOODEN_DAGGER = registerItem("wooden_dagger",
             setting -> new Item(setting.sword(ToolMaterial.WOOD, 2.0F, -2.4F)));
@@ -245,21 +294,24 @@ public class TBSItems {
     public static final Item GOLDEN_DAGGER = registerItem("golden_dagger",
             setting -> new Item(setting.sword(ToolMaterial.GOLD, 2.0F, -2.4F)));
     public static final Item BYZANTIUM_DAGGER = registerItem("byzantium_dagger",
-            setting -> new Item(setting.sword(TBSToolMaterials.BYZANTIUM_EQUIPMENT, 2.0F, -2.4F)));
+            setting -> new Item(setting.sword(TBSToolMaterials.BYZANTIUM, 2.0F, -2.4F)));
     public static final Item IRON_DAGGER = registerItem("iron_dagger",
             setting -> new Item(setting.sword(ToolMaterial.IRON, 2.0F, -2.4F)));
     public static final Item STEEL_DAGGER = registerItem("steel_dagger",
-            setting -> new Item(setting.sword(TBSToolMaterials.STEEL_EQUIPMENT, 2.0F, -2.4F)));
+            setting -> new Item(setting.sword(TBSToolMaterials.STEEL, 2.0F, -2.4F)));
     public static final Item DIAMOND_DAGGER = registerItem("diamond_dagger",
             setting -> new Item(setting.sword(ToolMaterial.DIAMOND, 2.0F, -2.4F)));
     public static final Item NETHERITE_DAGGER = registerItem("netherite_dagger",
             setting -> new Item(setting.sword(ToolMaterial.NETHERITE, 2.0F, -2.4F).fireproof()));
     public static final Item DIAMARITE_DAGGER = registerItem("diamarite_dagger",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 2.0F, -2.4F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 2.0F, -2.4F).fireproof()));
     public static final Item CORRUPTIONITE_DAGGER = registerItem("corruptionite_dagger",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 2.0F, -2.4F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 2.0F, -2.4F).fireproof()));
     public static final Item GILDED_NETHERITE_DAGGER = registerItem("gilded_netherite_dagger",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 2.0F, -2.4F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 2.0F, -2.4F).fireproof()));
+
+    public static final Item ENERGY_DAGGER = registerItem("energy_dagger",
+            setting -> new Item(setting.sword(TBSToolMaterials.ENERGY, 2.0F, -2.4F)));
 
 
     //public static final Item CORRUPTIONITE_DAGGER = registerItem("corruptionite_dagger",
@@ -278,21 +330,24 @@ public class TBSItems {
     public static final Item GOLDEN_SICKLE = registerItem("golden_sickle",
             setting -> new Item(setting.sword(ToolMaterial.GOLD, 1.65F, -1.5F)));
     public static final Item BYZANTIUM_SICKLE = registerItem("byzantium_sickle",
-            setting -> new Item(setting.sword(TBSToolMaterials.BYZANTIUM_EQUIPMENT, 2.85F, -1.5F)));
+            setting -> new Item(setting.sword(TBSToolMaterials.BYZANTIUM, 2.85F, -1.5F)));
     public static final Item IRON_SICKLE = registerItem("iron_sickle",
             setting -> new Item(setting.sword(ToolMaterial.IRON, 2.85F, -1.5F)));
     public static final Item STEEL_SICKLE = registerItem("steel_sickle",
-            setting -> new Item(setting.sword(TBSToolMaterials.STEEL_EQUIPMENT, 2.85F, -1.5F)));
+            setting -> new Item(setting.sword(TBSToolMaterials.STEEL, 2.85F, -1.5F)));
     public static final Item DIAMOND_SICKLE = registerItem("diamond_sickle",
             setting -> new Item(setting.sword(ToolMaterial.DIAMOND, 3.45F, -1.5F)));
     public static final Item NETHERITE_SICKLE = registerItem("netherite_sickle",
             setting -> new Item(setting.sword(ToolMaterial.NETHERITE, 4.0F, -1.5F).fireproof()));
     public static final Item DIAMARITE_SICKLE = registerItem("diamarite_sickle",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 4.0F, -1.5F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 4.0F, -1.5F).fireproof()));
     public static final Item CORRUPTIONITE_SICKLE = registerItem("corruptionite_sickle",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 4.0F, -1.5F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 4.0F, -1.5F).fireproof()));
     public static final Item GILDED_NETHERITE_SICKLE = registerItem("gilded_netherite_sickle",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 4.0F, -1.5F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 4.0F, -1.5F).fireproof()));
+
+    public static final Item ENERGY_SICKLE = registerItem("energy_sickle",
+            setting -> new Item(setting.sword(TBSToolMaterials.ENERGY, 3.45F, -1.5F)));
 
     //Katana
     public static final Item WOODEN_KATANA = registerItem("wooden_katana",
@@ -304,21 +359,24 @@ public class TBSItems {
     public static final Item GOLDEN_KATANA = registerItem("golden_katana",
             setting -> new Item(setting.sword(ToolMaterial.GOLD, 3.15F, -2.0F)));
     public static final Item BYZANTIUM_KATANA = registerItem("byzantium_katana",
-            setting -> new Item(setting.sword(TBSToolMaterials.BYZANTIUM_EQUIPMENT, 5.25F, -2.0F)));
+            setting -> new Item(setting.sword(TBSToolMaterials.BYZANTIUM, 5.25F, -2.0F)));
     public static final Item IRON_KATANA = registerItem("iron_katana",
             setting -> new Item(setting.sword(ToolMaterial.IRON, 5.25F, -2.0F)));
     public static final Item STEEL_KATANA = registerItem("steel_katana",
-            setting -> new Item(setting.sword(TBSToolMaterials.STEEL_EQUIPMENT, 5.25F, -2.0F)));
+            setting -> new Item(setting.sword(TBSToolMaterials.STEEL, 5.25F, -2.0F)));
     public static final Item DIAMOND_KATANA = registerItem("diamond_katana",
             setting -> new Item(setting.sword(ToolMaterial.DIAMOND, 6.3F, -2.0F)));
     public static final Item NETHERITE_KATANA = registerItem("netherite_katana",
             setting -> new Item(setting.sword(ToolMaterial.NETHERITE, 7.35F, -2.0F).fireproof()));
     public static final Item DIAMARITE_KATANA = registerItem("diamarite_katana",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 7.35F, -2.0F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 7.35F, -2.0F).fireproof()));
     public static final Item CORRUPTIONITE_KATANA = registerItem("corruptionite_katana",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 7.35F, -2.0F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 7.35F, -2.0F).fireproof()));
     public static final Item GILDED_NETHERITE_KATANA = registerItem("gilded_netherite_katana",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 7.35F, -2.0F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 7.35F, -2.0F).fireproof()));
+
+    public static final Item ENERGY_KATANA = registerItem("energy_katana",
+            setting -> new Item(setting.sword(TBSToolMaterials.ENERGY, 6.3F, -2.0F)));
 
     //Scythe
     public static final Item WOODEN_SCYTHE = registerItem("wooden_scythe",
@@ -330,43 +388,51 @@ public class TBSItems {
     public static final Item GOLDEN_SCYTHE = registerItem("golden_scythe",
             setting -> new Item(setting.sword(ToolMaterial.GOLD, 11.0F, -3.3F)));
     public static final Item BYZANTIUM_SCYTHE = registerItem("byzantium_scythe",
-            setting -> new Item(setting.sword(TBSToolMaterials.BYZANTIUM_EQUIPMENT, 17.0F, -3.3F)));
+            setting -> new Item(setting.sword(TBSToolMaterials.BYZANTIUM, 17.0F, -3.3F)));
     public static final Item IRON_SCYTHE = registerItem("iron_scythe",
             setting -> new Item(setting.sword(ToolMaterial.IRON, 17.0F, -3.3F)));
     public static final Item STEEL_SCYTHE = registerItem("steel_scythe",
-            setting -> new Item(setting.sword(TBSToolMaterials.STEEL_EQUIPMENT, 17.0F, -3.3F)));
+            setting -> new Item(setting.sword(TBSToolMaterials.STEEL, 17.0F, -3.3F)));
     public static final Item DIAMOND_SCYTHE = registerItem("diamond_scythe",
             setting -> new Item(setting.sword(ToolMaterial.DIAMOND, 20.0F, -3.3F)));
     public static final Item NETHERITE_SCYTHE = registerItem("netherite_scythe",
             setting -> new Item(setting.sword(ToolMaterial.NETHERITE, 23.0F, -3.3F).fireproof()));
     public static final Item DIAMARITE_SCYTHE = registerItem("diamarite_scythe",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 23.0F, -3.3F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 23.0F, -3.3F).fireproof()));
     public static final Item CORRUPTIONITE_SCYTHE = registerItem("corruptionite_scythe",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 23.0F, -3.3F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 23.0F, -3.3F).fireproof()));
     public static final Item GILDED_NETHERITE_SCYTHE = registerItem("gilded_netherite_scythe",
-            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE_EQUIPMENT, 23.0F, -3.3F).fireproof()));
+            setting -> new Item(setting.sword(TBSToolMaterials.NETHERITE2, 23.0F, -3.3F).fireproof()));
+
+    public static final Item ENERGY_SCYTHE = registerItem("energy_scythe",
+            setting -> new Item(setting.sword(TBSToolMaterials.ENERGY, 20.0F, -3.3F)));
 
     //Spear
     public static final Item STEEL_SPEAR = registerItem("steel_spear",
-            setting -> new Item(setting.spear(TBSToolMaterials.STEEL_EQUIPMENT,
+            setting -> new Item(setting.spear(TBSToolMaterials.STEEL,
                     0.95F, 0.95F, 0.6F, 2.5F,
                     8.0F, 6.75F, 5.1F, 11.25F, 4.6F)));
     public static final Item BYZANTIUM_SPEAR = registerItem("byzantium_spear",
-            setting -> new Item(setting.spear(TBSToolMaterials.BYZANTIUM_EQUIPMENT,
+            setting -> new Item(setting.spear(TBSToolMaterials.BYZANTIUM,
                     0.95F, 0.95F, 0.6F, 2.5F,
                     8.0F, 6.75F, 5.1F, 11.25F, 4.6F)));
     public static final Item DIAMARITE_SPEAR = registerItem("diamarite_spear",
-            setting -> new Item(setting.spear(TBSToolMaterials.NETHERITE_EQUIPMENT,
+            setting -> new Item(setting.spear(TBSToolMaterials.NETHERITE2,
                     1.15F, 1.2F, 0.4F, 2.5F,
                     7.0F, 5.5F, 5.1F, 8.75F, 4.6F).fireproof()));
     public static final Item CORRUPTIONITE_SPEAR = registerItem("corruptionite_spear",
-            setting -> new Item(setting.spear(TBSToolMaterials.NETHERITE_EQUIPMENT,
+            setting -> new Item(setting.spear(TBSToolMaterials.NETHERITE2,
                     1.15F, 1.2F, 0.4F, 2.5F,
                     7.0F, 5.5F, 5.1F, 8.75F, 4.6F).fireproof()));
     public static final Item GILDED_NETHERITE_SPEAR = registerItem("gilded_netherite_spear",
-            setting -> new Item(setting.spear(TBSToolMaterials.NETHERITE_EQUIPMENT,
+            setting -> new Item(setting.spear(TBSToolMaterials.NETHERITE2,
                     1.15F, 1.2F, 0.4F, 2.5F,
                     7.0F, 5.5F, 5.1F, 8.75F, 4.6F).fireproof()));
+
+    public static final Item ENERGY_SPEAR = registerItem("energy_spear",
+            setting -> new Item(setting.spear(TBSToolMaterials.ENERGY,
+                    1.05F, 1.075F, 0.5F, 3.0F,
+                    7.5F, 6.5F, 5.1F, 10.0F, 4.6F).fireproof()));
 
     //Mace
     public static final Item DIAMARITE_MACE = registerItem("diamarite_mace",
@@ -454,6 +520,11 @@ public class TBSItems {
             entries.addAfter(TBSItems.BYZANTIUM_SHOVEL, TBSItems.BYZANTIUM_PICKAXE);
             entries.addAfter(TBSItems.BYZANTIUM_PICKAXE, TBSItems.BYZANTIUM_AXE);
             entries.addAfter(TBSItems.BYZANTIUM_AXE, TBSItems.BYZANTIUM_HOE);
+            entries.addAfter(Items.DIAMOND_HOE, TBSItems.ENERGY_SHOVEL);
+            entries.addAfter(TBSItems.ENERGY_SHOVEL, TBSItems.ENERGY_PICKAXE);
+            entries.addAfter(TBSItems.ENERGY_PICKAXE, TBSItems.ENERGY_AXE);
+            entries.addAfter(TBSItems.ENERGY_AXE, TBSItems.ENERGY_HOE);
+            entries.addAfter(TBSItems.ENERGY_HOE, Items.NETHERITE_SHOVEL);
             entries.addAfter(Items.NETHERITE_HOE, TBSItems.GILDED_NETHERITE_SHOVEL);
             entries.addAfter(TBSItems.GILDED_NETHERITE_SHOVEL, TBSItems.GILDED_NETHERITE_PICKAXE);
             entries.addAfter(TBSItems.GILDED_NETHERITE_PICKAXE, TBSItems.GILDED_NETHERITE_AXE);
@@ -473,21 +544,26 @@ public class TBSItems {
             entries.addAfter(Items.STICK, TBSItems.HANDLE);
             entries.addAfter(TBSItems.HANDLE, TBSItems.STEEL_HANDLE);
             entries.addAfter(TBSItems.STEEL_HANDLE, TBSItems.NETHERITE_HANDLE);
-            entries.addAfter(TBSItems.NETHERITE_HANDLE, TBSItems.BIG_STICK);
+            entries.addAfter(TBSItems.NETHERITE_HANDLE, TBSItems.ENERGY_HANDLE);
+            entries.addAfter(TBSItems.ENERGY_HANDLE, TBSItems.BIG_STICK);
             entries.addAfter(TBSItems.BIG_STICK, TBSItems.STEEL_ROD);
             entries.addAfter(TBSItems.STEEL_ROD, TBSItems.NETHERITE_ROD);
+            entries.addAfter(TBSItems.NETHERITE_ROD, TBSItems.ENERGY_ROD);
             entries.addAfter(Items.EMERALD, TBSItems.CURSED_EMERALD);
             entries.addAfter(Items.IRON_INGOT, TBSItems.STEEL_INGOT);
             entries.addAfter(Items.NETHERITE_INGOT, TBSItems.GILDED_NETHERITE_INGOT);
             entries.addAfter(TBSItems.GILDED_NETHERITE_INGOT, TBSItems.DIAMARITE_INGOT);
             entries.addAfter(TBSItems.DIAMARITE_INGOT, TBSItems.CORRUPTIONITE_INGOT);
-            entries.addAfter(Items.DIAMOND, TBSItems.DIAMARITE);
+            entries.addAfter(Items.DIAMOND, TBSItems.ENERGY_GEM);
+            entries.addAfter(TBSItems.ENERGY_GEM, TBSItems.DIAMARITE);
+            entries.addAfter(TBSItems.DIAMARITE, TBSItems.DREADITE_GEM);
             entries.addAfter(Items.GOLD_INGOT, TBSItems.BYZANTIUM_INGOT);
             entries.addAfter(TBSItems.BYZANTIUM_INGOT, TBSItems.DIAMOND_INGOT);
             entries.addAfter(Items.COPPER_INGOT, TBSItems.AMETHYST_INGOT);
             entries.addAfter(Items.PAPER, TBSItems.REINFORCED_PAPER);
             entries.addAfter(TBSItems.REINFORCED_PAPER, TBSItems.DUCT_TAPE);
             entries.addAfter(Items.NETHERITE_SCRAP, TBSItems.GOLDEN_SCRAP);
+            entries.addAfter(Items.GOLD_NUGGET, TBSItems.ENERGY);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
@@ -526,6 +602,12 @@ public class TBSItems {
             entries.addAfter(TBSItems.DIAMOND_KATANA, TBSItems.DIAMOND_SICKLE);
             entries.addAfter(TBSItems.DIAMOND_SICKLE, TBSItems.DIAMOND_SCYTHE);
             entries.addAfter(TBSItems.DIAMOND_SCYTHE, TBSItems.DIAMOND_DAGGER);
+            entries.addAfter(TBSItems.DIAMOND_DAGGER, TBSItems.ENERGY_SWORD);
+            entries.addAfter(TBSItems.ENERGY_SWORD, TBSItems.ENERGY_KATANA);
+            entries.addAfter(TBSItems.ENERGY_KATANA, TBSItems.ENERGY_SICKLE);
+            entries.addAfter(TBSItems.ENERGY_SICKLE, TBSItems.ENERGY_SCYTHE);
+            entries.addAfter(TBSItems.ENERGY_SCYTHE, TBSItems.ENERGY_DAGGER);
+            entries.addAfter(TBSItems.ENERGY_DAGGER, Items.NETHERITE_SWORD);
             entries.addAfter(Items.NETHERITE_SWORD, TBSItems.NETHERITE_KATANA);
             entries.addAfter(TBSItems.NETHERITE_KATANA, TBSItems.NETHERITE_SICKLE);
             entries.addAfter(TBSItems.NETHERITE_SICKLE, TBSItems.NETHERITE_SCYTHE);
@@ -547,11 +629,15 @@ public class TBSItems {
             entries.addAfter(TBSItems.CORRUPTIONITE_SCYTHE, TBSItems.CORRUPTIONITE_DAGGER);
             entries.addAfter(Items.IRON_AXE, TBSItems.STEEL_AXE);
             entries.addAfter(Items.GOLDEN_AXE, TBSItems.BYZANTIUM_AXE);
+            entries.addAfter(Items.DIAMOND_AXE, TBSItems.ENERGY_AXE);
+            entries.addAfter(TBSItems.ENERGY_AXE, Items.NETHERITE_AXE);
             entries.addAfter(Items.NETHERITE_AXE, TBSItems.GILDED_NETHERITE_AXE);
             entries.addAfter(TBSItems.GILDED_NETHERITE_AXE, TBSItems.DIAMARITE_AXE);
             entries.addAfter(TBSItems.DIAMARITE_AXE, TBSItems.CORRUPTIONITE_AXE);
             entries.addAfter(Items.IRON_SPEAR, TBSItems.STEEL_SPEAR);
             entries.addAfter(Items.GOLDEN_SPEAR, TBSItems.BYZANTIUM_SPEAR);
+            entries.addAfter(Items.DIAMOND_SPEAR, TBSItems.ENERGY_SPEAR);
+            entries.addAfter(TBSItems.ENERGY_SPEAR, Items.NETHERITE_SPEAR);
             entries.addAfter(Items.NETHERITE_SPEAR, TBSItems.GILDED_NETHERITE_SPEAR);
             entries.addAfter(TBSItems.GILDED_NETHERITE_SPEAR, TBSItems.DIAMARITE_SPEAR);
             entries.addAfter(TBSItems.DIAMARITE_SPEAR, TBSItems.CORRUPTIONITE_SPEAR);
@@ -559,6 +645,11 @@ public class TBSItems {
             entries.addAfter(TBSItems.BYZANTIUM_HELMET, TBSItems.BYZANTIUM_CHESTPLATE);
             entries.addAfter(TBSItems.BYZANTIUM_CHESTPLATE, TBSItems.BYZANTIUM_LEGGINGS);
             entries.addAfter(TBSItems.BYZANTIUM_LEGGINGS, TBSItems.BYZANTIUM_BOOTS);
+            entries.addAfter(Items.DIAMOND_BOOTS, TBSItems.ENERGY_HELMET);
+            entries.addAfter(TBSItems.ENERGY_HELMET, TBSItems.ENERGY_CHESTPLATE);
+            entries.addAfter(TBSItems.ENERGY_CHESTPLATE, TBSItems.ENERGY_LEGGINGS);
+            entries.addAfter(TBSItems.ENERGY_LEGGINGS, TBSItems.ENERGY_BOOTS);
+            entries.addAfter(TBSItems.ENERGY_BOOTS, Items.NETHERITE_HELMET);
             entries.addAfter(Items.NETHERITE_BOOTS, TBSItems.GILDED_NETHERITE_HELMET);
             entries.addAfter(TBSItems.GILDED_NETHERITE_HELMET, TBSItems.GILDED_NETHERITE_CHESTPLATE);
             entries.addAfter(TBSItems.GILDED_NETHERITE_CHESTPLATE, TBSItems.GILDED_NETHERITE_LEGGINGS);
@@ -571,6 +662,10 @@ public class TBSItems {
             entries.addAfter(TBSItems.CORRUPTIONITE_HELMET, TBSItems.CORRUPTIONITE_CHESTPLATE);
             entries.addAfter(TBSItems.CORRUPTIONITE_CHESTPLATE, TBSItems.CORRUPTIONITE_LEGGINGS);
             entries.addAfter(TBSItems.CORRUPTIONITE_LEGGINGS, TBSItems.CORRUPTIONITE_BOOTS);
+            entries.addAfter(TBSItems.CORRUPTIONITE_BOOTS, TBSItems.DREADITE_HELMET);
+            entries.addAfter(TBSItems.DREADITE_HELMET, TBSItems.DREADITE_CHESTPLATE);
+            entries.addAfter(TBSItems.DREADITE_CHESTPLATE, TBSItems.DREADITE_LEGGINGS);
+            entries.addAfter(TBSItems.DREADITE_LEGGINGS, TBSItems.DREADITE_BOOTS);
             entries.addAfter(Items.MACE, TBSItems.DIAMARITE_MACE);
         });
     }

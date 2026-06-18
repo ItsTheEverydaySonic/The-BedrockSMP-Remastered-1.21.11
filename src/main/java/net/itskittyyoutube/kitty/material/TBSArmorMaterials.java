@@ -2,7 +2,7 @@ package net.itskittyyoutube.kitty.material;
 
 import net.itskittyyoutube.kitty.TBS;
 import net.itskittyyoutube.kitty.sounds.TBSSoundEvents;
-import net.itskittyyoutube.kitty.util.TBSTags;
+import net.itskittyyoutube.kitty.util.TBSItemTags;
 import net.minecraft.item.equipment.ArmorMaterial;
 import net.minecraft.item.equipment.EquipmentAsset;
 import net.minecraft.item.equipment.EquipmentType;
@@ -21,6 +21,7 @@ public class TBSArmorMaterials {
     public static final RegistryKey<EquipmentAsset> BYZANTIUM_KEY = RegistryKey.of(REGISTRY_KEY, Identifier.of(TBS.MOD_ID, "byzantium"));
     public static final RegistryKey<EquipmentAsset> GILDED_NETHERITE_KEY = RegistryKey.of(REGISTRY_KEY, Identifier.of(TBS.MOD_ID, "gilded_netherite"));
     public static final RegistryKey<EquipmentAsset> ENERGY_KEY = RegistryKey.of(REGISTRY_KEY, Identifier.of(TBS.MOD_ID, "energy"));
+    public static final RegistryKey<EquipmentAsset> DREADITE_KEY = RegistryKey.of(REGISTRY_KEY, Identifier.of(TBS.MOD_ID, "dreadite"));
 
     public static final ArmorMaterial DIAMARITE = new ArmorMaterial(37, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 3);
@@ -28,7 +29,7 @@ public class TBSArmorMaterials {
         map.put(EquipmentType.CHESTPLATE, 8);
         map.put(EquipmentType.HELMET, 3);
         map.put(EquipmentType.BODY, 11);
-    }), 15, TBSSoundEvents.ITEM_ARMOR_EQUIP_DIAMARITE,3.0F,0.1F, TBSTags.Items.NETHERITE_EQUIPMENT_REPAIR, DIAMARITE_KEY);
+    }), 15, TBSSoundEvents.ITEM_ARMOR_EQUIP_DIAMARITE,3.0F,0.1F, TBSItemTags.NETHERITE_EQUIPMENT_REPAIR, DIAMARITE_KEY);
 
     public static final ArmorMaterial CORRUPTIONITE = new ArmorMaterial(37, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 3);
@@ -36,7 +37,7 @@ public class TBSArmorMaterials {
         map.put(EquipmentType.CHESTPLATE, 8);
         map.put(EquipmentType.HELMET, 3);
         map.put(EquipmentType.BODY, 11);
-    }), 15, TBSSoundEvents.ITEM_ARMOR_EQUIP_CORRUPTIONITE,3.0F,0.1F, TBSTags.Items.NETHERITE_EQUIPMENT_REPAIR, CORRUPTIONITE_KEY);
+    }), 15, TBSSoundEvents.ITEM_ARMOR_EQUIP_CORRUPTIONITE,3.0F,0.1F, TBSItemTags.NETHERITE_EQUIPMENT_REPAIR, CORRUPTIONITE_KEY);
 
     public static final ArmorMaterial BYZANTIUM = new ArmorMaterial(15, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 2);
@@ -44,7 +45,7 @@ public class TBSArmorMaterials {
         map.put(EquipmentType.CHESTPLATE, 6);
         map.put(EquipmentType.HELMET, 2);
         map.put(EquipmentType.BODY, 5);
-    }), 9, TBSSoundEvents.ITEM_ARMOR_EQUIP_BYZANTIUM,0.0F,0.0F, TBSTags.Items.BYZANTIUM_EQUIPMENT_REPAIR, BYZANTIUM_KEY);
+    }), 9, TBSSoundEvents.ITEM_ARMOR_EQUIP_BYZANTIUM,0.0F,0.0F, TBSItemTags.BYZANTIUM_EQUIPMENT_REPAIR, BYZANTIUM_KEY);
 
     public static final ArmorMaterial GILDED_NETHERITE = new ArmorMaterial(37, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 3);
@@ -52,7 +53,7 @@ public class TBSArmorMaterials {
         map.put(EquipmentType.CHESTPLATE, 8);
         map.put(EquipmentType.HELMET, 3);
         map.put(EquipmentType.BODY, 11);
-    }), 15, TBSSoundEvents.ITEM_ARMOR_EQUIP_GILDED_NETHERITE,3.0F,0.1F, TBSTags.Items.NETHERITE_EQUIPMENT_REPAIR, GILDED_NETHERITE_KEY);
+    }), 15, TBSSoundEvents.ITEM_ARMOR_EQUIP_GILDED_NETHERITE,3.0F,0.1F, TBSItemTags.NETHERITE_EQUIPMENT_REPAIR, GILDED_NETHERITE_KEY);
 
     public static final ArmorMaterial ENERGY = new ArmorMaterial(33, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 3);
@@ -60,5 +61,13 @@ public class TBSArmorMaterials {
         map.put(EquipmentType.CHESTPLATE, 8);
         map.put(EquipmentType.HELMET, 3);
         map.put(EquipmentType.BODY, 11);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,2.0F,0.0F, TBSTags.Items.ENERGY_EQUIPMENT_REPAIR, ENERGY_KEY);
+    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,2.0F,0.0F, TBSItemTags.ENERGY_EQUIPMENT_REPAIR, ENERGY_KEY);
+
+    public static final ArmorMaterial DREADITE = new ArmorMaterial(37, Util.make(new EnumMap<>(EquipmentType.class), map -> {
+        map.put(EquipmentType.BOOTS, 3);
+        map.put(EquipmentType.LEGGINGS, 6);
+        map.put(EquipmentType.CHESTPLATE, 8);
+        map.put(EquipmentType.HELMET, 3);
+        map.put(EquipmentType.BODY, 11);
+    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,3.0F,0.1F, TBSItemTags.DREADITE_EQUIPMENT_REPAIR, DREADITE_KEY);
 }

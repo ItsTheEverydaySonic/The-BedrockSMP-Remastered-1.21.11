@@ -11,7 +11,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "kitty:weaponry/axe/diamond_axe",
+  "parent": "kitty:weaponry/axe/energy_axe",
   "criteria": {
     "axe": {
       "trigger": "minecraft:inventory_changed",

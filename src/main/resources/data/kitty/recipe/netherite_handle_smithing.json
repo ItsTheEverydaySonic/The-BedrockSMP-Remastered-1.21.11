@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:netherite_tool_materials",
+  "base": "kitty:handle",
+  "result": {
+    "id": "kitty:netherite_handle"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

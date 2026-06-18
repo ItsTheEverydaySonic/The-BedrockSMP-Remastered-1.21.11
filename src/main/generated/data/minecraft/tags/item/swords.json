@@ -6,6 +6,7 @@
     "kitty:katara_knife",
     "kitty:byzantium_sword",
     "kitty:gilded_netherite_sword",
+    "kitty:energy_sword",
     "kitty:wooden_dagger",
     "kitty:copper_dagger",
     "kitty:stone_dagger",
@@ -18,6 +19,7 @@
     "kitty:diamarite_dagger",
     "kitty:corruptionite_dagger",
     "kitty:gilded_netherite_dagger",
+    "kitty:energy_dagger",
     "kitty:wooden_sickle",
     "kitty:copper_sickle",
     "kitty:stone_sickle",
@@ -30,6 +32,7 @@
     "kitty:diamarite_sickle",
     "kitty:corruptionite_sickle",
     "kitty:gilded_netherite_sickle",
+    "kitty:energy_sickle",
     "kitty:wooden_katana",
     "kitty:copper_katana",
     "kitty:stone_katana",
@@ -42,6 +45,7 @@
     "kitty:diamarite_katana",
     "kitty:corruptionite_katana",
     "kitty:gilded_netherite_katana",
+    "kitty:energy_katana",
     "kitty:wooden_scythe",
     "kitty:copper_scythe",
     "kitty:stone_scythe",
@@ -53,6 +57,7 @@
     "kitty:netherite_scythe",
     "kitty:diamarite_scythe",
     "kitty:corruptionite_scythe",
-    "kitty:gilded_netherite_scythe"
+    "kitty:gilded_netherite_scythe",
+    "kitty:energy_scythe"
   ]
 }

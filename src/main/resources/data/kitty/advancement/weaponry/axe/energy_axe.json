@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:energy_axe",
+      "count": 1
+    },
+    "title": "Energy Axe",
+    "description": "Acquire a Energy Axe",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/axe/diamond_axe",
+  "criteria": {
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:energy_axe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "axe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -11,7 +11,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kitty:weaponry/katana/diamond_katana",
+    "parent": "kitty:weaponry/katana/energy_katana",
     "criteria": {
       "katana": {
         "trigger": "minecraft:inventory_changed",

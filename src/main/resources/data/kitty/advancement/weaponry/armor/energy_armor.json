@@ -1,0 +1,39 @@
+{
+  "parent": "kitty:weaponry/armor/diamond_armor",
+  "criteria": {
+    "energy_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:energy_helmet"
+          },
+          {
+            "items": "kitty:energy_chestplate"
+          },
+          {
+            "items": "kitty:energy_leggings"
+          },
+          {
+            "items": "kitty:energy_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Get a full suit of Energy Armor",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "kitty:energy_chestplate"
+    },
+    "title": "Ooooh Energy?"
+  },
+  "requirements": [
+    [
+      "energy_armor"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

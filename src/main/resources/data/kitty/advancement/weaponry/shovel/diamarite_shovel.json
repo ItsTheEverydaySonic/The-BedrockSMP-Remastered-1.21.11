@@ -11,7 +11,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "kitty:weaponry/shovel/diamond_shovel",
+  "parent": "kitty:weaponry/shovel/energy_shovel",
   "criteria": {
     "shovel": {
       "trigger": "minecraft:inventory_changed",

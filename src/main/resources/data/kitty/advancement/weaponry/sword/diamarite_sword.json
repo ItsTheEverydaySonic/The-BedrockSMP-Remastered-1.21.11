@@ -11,7 +11,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kitty:weaponry/sword/diamond_sword",
+    "parent": "kitty:weaponry/sword/energy_sword",
     "criteria": {
       "sword": {
         "trigger": "minecraft:inventory_changed",

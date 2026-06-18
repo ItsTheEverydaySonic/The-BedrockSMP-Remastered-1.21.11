@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "kitty:energy_hoe",
+      "count": 1
+    },
+    "title": "Energy Hoe",
+    "description": "Acquire a Energy Hoe",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kitty:weaponry/hoe/diamond_hoe",
+  "criteria": {
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:energy_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hoe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

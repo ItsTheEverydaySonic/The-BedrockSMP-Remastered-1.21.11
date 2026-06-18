@@ -11,7 +11,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "kitty:weaponry/hoe/diamond_hoe",
+  "parent": "kitty:weaponry/hoe/energy_hoe",
   "criteria": {
     "hoe": {
       "trigger": "minecraft:inventory_changed",

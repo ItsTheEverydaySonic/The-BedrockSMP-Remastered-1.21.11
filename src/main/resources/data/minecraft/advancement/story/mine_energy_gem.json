@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:story/iron_tools",
+  "criteria": {
+    "energy_gem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kitty:energy_gem"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Acquire energy gem",
+    "icon": {
+      "count": 1,
+      "id": "kitty:energy_gem"
+    },
+    "title": "Energy Gem!"
+  },
+  "requirements": [
+    [
+      "energy_gem"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
