@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:yellow_dye",
+    "X": "minecraft:birch_log"
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kitty:golden_birch_log"
+  }
+}

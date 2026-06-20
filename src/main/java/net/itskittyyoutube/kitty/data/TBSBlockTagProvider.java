@@ -28,7 +28,8 @@ public class TBSBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(TBSBlocks.DEEPSLATE_BYZANTIUM_ORE)
                 .add(TBSBlocks.DIAMARITE_CORE)
                 .add(TBSBlocks.GILDED_NETHERITE_BLOCK)
-                .add(TBSBlocks.ENERGY_BLOCK);
+                .add(TBSBlocks.ENERGY_BLOCK)
+                .add(TBSBlocks.GOLDEN_DEBRIS);
 
         valueLookupBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(TBSBlocks.STONE_DOOR)
@@ -46,7 +47,8 @@ public class TBSBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(TBSBlocks.OBSIDIAN_TRAPDOOR)
                 .add(TBSBlocks.DIAMARITE_BLOCK)
                 .add(TBSBlocks.CORRUPTIONITE_BLOCK)
-                .add(TBSBlocks.GILDED_NETHERITE_BLOCK);
+                .add(TBSBlocks.GILDED_NETHERITE_BLOCK)
+                .add(TBSBlocks.GOLDEN_DEBRIS);
 
         valueLookupBuilder(BlockTags.WOODEN_FENCES)
                 .add(TBSBlocks.WHITE_FENCE)

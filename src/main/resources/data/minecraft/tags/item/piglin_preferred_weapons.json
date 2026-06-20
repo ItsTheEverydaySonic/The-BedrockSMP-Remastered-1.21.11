@@ -1,0 +1,20 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:crossbow",
+    "minecraft:golden_sword",
+    "minecraft:golden_spear",
+    "minecraft:golden_axe",
+    "kitty:golden_dagger",
+    "kitty:golden_sickle",
+    "kitty:golden_katana",
+    "kitty:golden_scythe",
+    "kitty:gilded_netherite_sword",
+    "kitty:gilded_netherite_spear",
+    "kitty:gilded_netherite_axe",
+    "kitty:gilded_netherite_dagger",
+    "kitty:gilded_netherite_sickle",
+    "kitty:gilded_netherite_katana",
+    "kitty:gilded_netherite_scythe"
+  ]
+}

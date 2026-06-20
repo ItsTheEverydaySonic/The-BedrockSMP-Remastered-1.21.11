@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "kitty:gilded_netherite_block",
+    "kitty:gilded_netherite_ingot",
+    "kitty:golden_debris",
+    "kitty:gilded_netherite_helmet",
+    "kitty:gilded_netherite_chestplate",
+    "kitty:gilded_netherite_leggings",
+    "kitty:gilded_netherite_boots",
+    "kitty:gilded_netherite_sword",
+    "kitty:gilded_netherite_spear",
+    "kitty:gilded_netherite_pickaxe",
+    "kitty:gilded_netherite_shovel",
+    "kitty:gilded_netherite_axe",
+    "kitty:gilded_netherite_hoe",
+    "kitty:gilded_netherite_dagger",
+    "kitty:gilded_netherite_sickle",
+    "kitty:gilded_netherite_katana",
+    "kitty:gilded_netherite_scythe",
+    "kitty:golden_dagger",
+    "kitty:golden_sickle",
+    "kitty:golden_katana",
+    "kitty:golden_scythe"
+  ]
+}

@@ -71,6 +71,7 @@ ba9504e729a5191be2ee8bba1ed79c052f5abd34 data/kitty/loot_table/blocks/golden_bir
 5af347a82187008dfb602940c6fd492bb8c63056 data/kitty/loot_table/blocks/golden_birch_stairs.json
 9dfbe5e7f883043092567fccb9473c1045c5c37d data/kitty/loot_table/blocks/golden_birch_trapdoor.json
 a9b464fbe9f466e233763a91e1245bc312e7f7de data/kitty/loot_table/blocks/golden_birch_wood.json
+20e314ae03634063e6f5abd13ab8f7a638163ac2 data/kitty/loot_table/blocks/golden_debris.json
 d6ff925c529827e819a400c951fa389fba63503a data/kitty/loot_table/blocks/gray_button.json
 3d5d35bcd0f8220b4e6e07132d8bfd76d742ac54 data/kitty/loot_table/blocks/gray_door.json
 bdb46c1416ba319fc6c2a852f2029f0a98694096 data/kitty/loot_table/blocks/gray_fence.json

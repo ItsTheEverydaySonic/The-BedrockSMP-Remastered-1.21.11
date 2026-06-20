@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "kitty:gilded_netherite_helmet",
+    "kitty:gilded_netherite_chestplate",
+    "kitty:gilded_netherite_leggings",
+    "kitty:gilded_netherite_boots"
+  ]
+}
