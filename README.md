@@ -22,6 +22,15 @@ https://github.com/ItsTheEverydaySonic/The-BedrockSMP-Remastered-26.1
 Remastered source code (reworked version for 26.2):
 https://github.com/ItsTheEverydaySonic/The-BedrockSMP-Remastered-26.2
 
+Remastered source code (reworked version for 26.3-snapshot-1):
+https://github.com/ItsTheEverydaySonic/The-BedrockSMP-Remastered-26.3-snapshot-1
+
+Remastered source code (reworked version for 26.3-snapshot-2):
+https://github.com/ItsTheEverydaySonic/The-BedrockSMP-Remastered-26.3-snapshot-2
+
+Remastered source code (reworked version for 26.3-snapshot-3):
+https://github.com/ItsTheEverydaySonic/The-BedrockSMP-Remastered-26.3-snapshot-3
+
 ---
 
 ## Credits
